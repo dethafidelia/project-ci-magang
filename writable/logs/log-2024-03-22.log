@@ -1,0 +1,603 @@
+CRITICAL - 2024-03-22 04:32:21 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:33:10 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:33:16 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:34:25 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:34:43 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:35:03 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 04:54:01 --> Invalid file: "gereja/gagal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja/gagal.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/gagal', [], true)
+ 3 APPPATH\Controllers\Gereja.php(99): view('gereja/gagal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 04:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 04:58:29 --> Invalid file: "login/loginpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/loginpage.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login/loginpage', [], true)
+ 3 APPPATH\Controllers\Login.php(9): view('login/loginpage')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:58:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:58:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 04:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 04:59:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 04:59:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-22 05:01:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#9 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\detha\KULIAH\KP\project-ci\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\detha\KULIAH\KP\project-ci\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\detha\KULIAH\KP\project-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\detha\KULIAH\KP\project-ci\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\detha\KULIAH\KP\project-ci\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\detha\KULIAH\KP\project-ci\app\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+#6 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(934): App\Controllers\Gereja->index()
+#7 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+#8 D:\detha\KULIAH\KP\project-ci\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\detha\KULIAH\KP\project-ci\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\detha\KULIAH\KP\project-ci\system\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH...')
+#11 {main}
+CRITICAL - 2024-03-22 05:01:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `login`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Gereja.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:03:04 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:05:14 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:05:26 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 05:05:39 --> Invalid file: "login/loginpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/loginpage.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login/loginpage', [], true)
+ 3 APPPATH\Controllers\Login.php(9): view('login/loginpage')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:05:49 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:06:01 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:06:04 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Gereja.php(22): view('Home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:38:43 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Gereja.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\detha\\KULIAH\\KP\\project-ci\\app\\Controllers\\Gereja.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Gereja')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Gereja')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Gereja', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:39:21 --> Call to a member function row_array() on array
+in APPPATH\Controllers\Gereja.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:42:04 --> Invalid file: "gereja .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja .php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja ', [], true)
+ 3 APPPATH\Controllers\Gereja.php(39): view('gereja ')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:42:58 --> Invalid file: "gereja .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja .php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja ', [], true)
+ 3 APPPATH\Controllers\Gereja.php(39): view('gereja ')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-22 05:43:57 --> Invalid file: "login/loginpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/loginpage.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login/loginpage', [], true)
+ 3 APPPATH\Controllers\Login.php(9): view('login/loginpage')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+CRITICAL - 2024-03-22 05:44:33 --> Invalid file: "gereja .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gereja .php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja ', [], true)
+ 3 APPPATH\Controllers\Gereja.php(39): view('gereja ')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Gereja->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gereja))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\KULIAH\\KP\\project-ci\\public\\index.php')
+INFO - 2024-03-22 05:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 05:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-22 06:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

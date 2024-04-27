@@ -1,0 +1,159 @@
+INFO - 2024-04-23 11:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 11:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 11:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 12:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 12:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 12:33:56 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 79.
+ 1 APPPATH\Views\gereja\formDPPH.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:35:14 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 77.
+ 1 APPPATH\Views\gereja\formDPPH.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:35:37 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 77.
+ 1 APPPATH\Views\gereja\formDPPH.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:36:07 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 77.
+ 1 APPPATH\Views\gereja\formDPPH.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:48:59 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 79.
+ 1 APPPATH\Views\gereja\formDPPH.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:51:26 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 79.
+ 1 APPPATH\Views\gereja\formDPPH.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:57:49 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 79.
+ 1 APPPATH\Views\gereja\formDPPH.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 12:58:41 --> Undefined variable $bidang
+in APPPATH\Views\gereja\formDPPH.php on line 78.
+ 1 APPPATH\Views\gereja\formDPPH.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\detha\\project-kp\\app\\Views\\gereja\\formDPPH.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/formDPPH', [], true)
+ 5 APPPATH\Controllers\tambahDPPH.php(10): view('gereja/formDPPH')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\tambahDPPH->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\tambahDPPH))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+INFO - 2024-04-23 13:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 13:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 13:54:57 --> Could not move file "php2741.tmp" to "lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php2741.tmp', 'lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('lpj/', 'C:\\xampp\\tmp\\php2741.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 13:55:28 --> Could not move file "phpA089.tmp" to "D:\detha\project-kp\writable\lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpA089.tmp', 'D:\\detha\\project-kp\\writable\\lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\detha\\project-kp\\writable\\lpj/', '')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 13:56:15 --> Could not move file "php5A35.tmp" to "D:\detha\project-kp\writable\lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php5A35.tmp', 'D:\\detha\\project-kp\\writable\\lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\detha\\project-kp\\writable\\lpj/', 'C:\\xampp\\tmp\\php5A35.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 13:56:44 --> Could not move file "phpC95B.tmp" to "D:\detha\project-kp\writable\lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpC95B.tmp', 'D:\\detha\\project-kp\\writable\\lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\detha\\project-kp\\writable\\lpj/', 'C:\\xampp\\tmp\\phpC95B.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 13:59:21 --> Could not move file "php2FAE.tmp" to "D:\detha\project-kp\writable\lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php2FAE.tmp', 'D:\\detha\\project-kp\\writable\\lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\detha\\project-kp\\writable\\lpj/', 'C:\\xampp\\tmp\\php2FAE.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+CRITICAL - 2024-04-23 14:02:42 --> Could not move file "php424F.tmp" to "D:\detha\project-kp\writable\lpj/". Reason: 
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php424F.tmp', 'D:\\detha\\project-kp\\writable\\lpj/', '')
+ 2 APPPATH\Controllers\Agenda.php(42): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\detha\\project-kp\\writable\\lpj/', 'C:\\xampp\\tmp\\php424F.tmp')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->submit()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-kp\\public\\index.php')
+INFO - 2024-04-23 14:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 14:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
