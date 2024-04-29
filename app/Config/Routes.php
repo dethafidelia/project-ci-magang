@@ -61,6 +61,8 @@ use App\Controllers\Monev;
 $routes->get('monev', 'Monev::index');
 $routes->get('monev/getAllMonev', 'Monev::getAllMonev');
 
+$routes->get('laporan', 'Laporan::index');
+
 use App\Controllers\HomeAdmin;
 
 $routes->get('homeAdmin', 'HomeAdmin::index');
@@ -68,6 +70,9 @@ $routes->get('homeAdmin', 'HomeAdmin::index');
 use App\Controllers\DPPH;
 
 $routes->get('dpph', 'DPPH::index');
+$routes->get('edit', 'DPPH::edit');
+$routes->get('update', 'DPPH::update');
+$routes->get('delete', 'DPPH::delete');
 
 use App\Controllers\HomeSBR;
 
@@ -94,8 +99,7 @@ $routes->get('bidang/getAllBidang', 'BidangController::getAllBidang');
 use App\Controllers\TimpelController;
 
 $routes->get('timpel/getAllTimPelayanan', 'TimpelController::getAllTimPelayanan');
-
-
+$routes->get('timpel/getById', 'TimpelController::getTimpelById');
 
 // $routes->get('timpel/getAllTimPelayanan', 'Timpel::getAllTimPelayanan');
 // $routes->get('timpel/getAllTimPelayanan', 'Bidang::getAllTimPelayanan');

@@ -15,4 +15,9 @@ class TimpelModel extends Model
     {
         return $this->findAll();
     }
+
+    public function getTimpelbyIdBidang($id)
+    {
+        return $this->where('id_bidang', $id)->findAll();
+    }
 }

@@ -24,8 +24,6 @@ class Agenda extends BaseController
     // Metode untuk menangani pengiriman formulir
     public function submit()
     {
-
-
         // Dapatkan file yang diunggah menggunakan request object
         $lpjdok = $this->request->getFile('lpj');
 

@@ -20,7 +20,7 @@ class DPPH extends BaseController
         // Logika untuk menampilkan form edit atau melakukan perubahan data
 
         // Misalnya, tampilkan view form edit dengan data anggota yang akan diubah
-        return view('edit_anggota', $data);
+        return view('formDPPH', $data);
     }
 
     public function update($id)

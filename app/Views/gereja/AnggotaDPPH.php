@@ -41,8 +41,8 @@
                     html += '<td>' + data[i]['NAMA_TIMPEL'] + '</td>';
                     html += '<td>' + data[i]['PROPOSAL'] + '</td>';
                     html += '<td>';
-                    html += '<a href="<?= base_url('edit/') ?>' + data[i]['ID'] + '" class="btn btn-primary">Edit</a>';
-                    html += '<a href="<?= base_url('delete/') ?>' + data[i]['ID'] + '" class="btn btn-danger">Hapus</a>';
+                    html += '<a href="<?= base_url('edit') ?>' + data[i]['EDIT'] + '" class="btn btn-primary">Edit</a>';
+                    html += '<a href="<?= base_url('delete') ?>' + data[i]['EDIT'] + '" class="btn btn-danger">Hapus</a>';
                     html += '</td>';
                     html += '</tr>';
                 }

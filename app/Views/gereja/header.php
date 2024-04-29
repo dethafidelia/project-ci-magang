@@ -82,6 +82,9 @@
                     <li class="nav-item ">
                         <a class="nav-link <?= (request()->uri->getSegment(1) == 'monev') ? 'active' : '' ?>" href="<?= base_url('monev') ?>">MONEV</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link <?= (request()->uri->getSegment(1) == 'laporan') ? 'active' : '' ?>" href="<?= base_url('laporan') ?>">LAPORAN</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">

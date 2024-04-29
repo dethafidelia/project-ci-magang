@@ -35,7 +35,7 @@
             url: "<?php echo base_url('bidang/getAllBidang'); ?>",
             dataType: 'json',
             success: function(data) {
-                console.log(data);
+                console.log(data)
                 $('#bidang').append($('<option>', {
                     value: '',
                     text: 'Pilih Bidang'
@@ -50,34 +50,38 @@
         });
 
         // Update Tim Pelayanan dropdown based on selected Bidang
-        $('#bidang').change(function() {
-            var bidangId = $(this).val();
-            if (bidangId) {
-                $.ajax({
-                    url: "<?php echo base_url('timpel/getAllTimPelayanan'); ?>",
-                    data: {
-                        idBidang: bidangId
-                    },
-                    dataType: 'json',
-                    success: function(data) {
-                        $('#timpel').empty(); // Clear existing options
-                        $('#timpel').append($('<option>', {
-                            value: '',
-                            text: 'Pilih Tim Pelayanan'
-                        }));
-                        $.each(data, function(key, value) {
-                            $('#timpel').append($('<option>', {
-                                value: value.id_tim_pelayanan,
-                                text: value.nama_tim_pelayanan
-                            }));
-                        });
-
-                        $('#timpel').prop('enable', false); // Enable Tim Pelayanan dropdown
+        $('#bidang').change(async function() {
+            var bidang = $(this).val();
+            console.log(bidang)
+            try {
+                const response = await fetch("<?= base_url('timpel/getById') ?>?bidang=" + bidang, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
                     }
                 });
-            } else {
-                $('#timpel').empty(); // Clear existing options
-                $('#timpel').prop('enable', true); // Disable Tim Pelayanan dropdown
+
+                if (!response.ok) {
+                    throw new Error('Gagal mengambil data');
+                }
+
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    console.log(response)
+                    throw new TypeError('Respons bukan JSON');
+                }
+
+                const res = await response.json();
+                console.log(res);
+                $('#timpel').empty();
+
+                // Tambahkan opsi baru berdasarkan respons dari server
+                res.forEach(function(timpel) {
+                    $('#timpel').append(`<option value="${timpel.id}">${timpel.nama}</option>`);
+                });
+
+            } catch (error) {
+                console.error(error);
             }
         });
     });

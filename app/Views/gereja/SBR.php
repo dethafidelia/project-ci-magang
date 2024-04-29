@@ -37,13 +37,17 @@
             background-color: darkslateblue;
             /* Warna latar belakang navigasi bar */
         }
+
         .navbar-nav .nav-item .nav-link.active {
-            color: #ffc107!important;
+            color: #ffc107 !important;
             /* Warna teks pada hover link navbar */
         }
+
         .highlight {
-            background-color: yellow; /* Warna latar belakang kuning */
-            font-weight: bold; /* Tulisan menjadi tebal */
+            background-color: yellow;
+            /* Warna latar belakang kuning */
+            font-weight: bold;
+            /* Tulisan menjadi tebal */
         }
     </style>
 </head>
@@ -77,6 +81,9 @@
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link <?= (request()->uri->getSegment(1) == 'monevSBR') ? 'active' : '' ?>" href="<?= base_url('monevSBR') ?>">MONEV</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link <?= (request()->uri->getSegment(1) == 'laporanSBR') ? 'active' : '' ?>" href="<?= base_url('laporanSBR') ?>">LAPORAN</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
