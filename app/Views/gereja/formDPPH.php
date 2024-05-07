@@ -14,7 +14,7 @@
     <div class="container mt-4">
         <h1 class="fs-5">Formulir Pendaftaran Anggota DPPH</h1>
         <p class="fs-6">Silahkan isi formulir di bawah ini untuk mendaftar.</p>
-        <form action="" method="post" class="border p-3">
+        <form action="<?php echo base_url('dpph/submit'); ?>" method="post" class="border p-3">
             <div class="form-group row mb-3">
                 <label for="nama_lengkap" class="col-sm-2 col-form-label font-weight-bold">Nama Lengkap</label>
                 <div class="col-sm-10">
@@ -53,13 +53,6 @@
                 <label for="password" class="col-sm-2 col-form-label font-weight-bold">Password</label>
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="password" name="password" required placeholder="Masukkan password Anda">
-                </div>
-            </div>
-
-            <div class="form-group row mb-3">
-                <label for="proposal" class="col-sm-2 col-form-label">Upload Proposal</label>
-                <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="proposal">
                 </div>
             </div>
 

@@ -70,9 +70,14 @@ $routes->get('homeAdmin', 'HomeAdmin::index');
 use App\Controllers\DPPH;
 
 $routes->get('dpph', 'DPPH::index');
-$routes->get('edit', 'DPPH::edit');
-$routes->get('update', 'DPPH::update');
-$routes->get('delete', 'DPPH::delete');
+$routes->get('dpph/getAllUser', 'DPPH::getAllUser');
+$routes->post('dpph/submit', 'DPPH::submit');
+
+use App\Controllers\Register;
+
+$routes->get('register', 'Register::index');
+// $routes->get('register/getAllUser', 'Register::getAllUser');
+// $routes->post('register/submit', 'Register::submit'); // Rute untuk menangani pengiriman formulir
 
 use App\Controllers\HomeSBR;
 
@@ -108,14 +113,7 @@ use App\Controllers\Programasi;
 
 $routes->get('programasi', 'Programasi::index');
 
-use App\Controllers\tambahDPPH;
 
-$routes->get('tambah', 'tambahDPPH::index');
-
-use App\Controllers\Register;
-
-$routes->get('register/getAllUser', 'Register::getAllUser');
-$routes->post('register/submit', 'Register::submit'); // Rute untuk menangani pengiriman formulir
 
 /*
  * --------------------------------------------------------------------

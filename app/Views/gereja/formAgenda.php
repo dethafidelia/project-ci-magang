@@ -19,9 +19,11 @@
 
         <form action="<?php echo base_url('agenda/submit'); ?>" method="post" enctype="multipart/form-data">
             <div class="form-group row mb-3">
-                <label for="bidang" class="col-sm-2 col-form-label">Bidang:</label>
+                <label for="bidang" class="col-sm-2 col-form-label font-weight-bold">Bidang</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="bidang" name="bidang" required>
+                    <select name="bidang" id="bidang" class="form-control">
+                        <!-- <option value="">Pilih Bidang</option> -->
+                    </select>
                 </div>
             </div>
 
@@ -70,23 +72,44 @@
             <div class="form-group row mb-3">
                 <label for="waktu" class="col-sm-2 col-form-label">Waktu:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="waktu" name="waktu" required>
+                    <input type="date" class="form-control" id="waktu" name="waktu" required>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
+                <label for="swadaya" class="col-sm-2 col-form-label">Swadaya:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="swadaya" name="swadaya" required>
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="dewan_paroki" class="col-sm-2 col-form-label">Dewan Paroki:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="dewan_paroki" name="dewan_paroki" required>
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="subsidi_kas" class="col-sm-2 col-form-label">Subsidi KAS:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="subsidi_kas" name="subsidi_kas" required>
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="sumber_lain" class="col-sm-2 col-form-label">Sumber Lain:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="sumber_lain" name="sumber_lain" required>
+                </div>
+            </div>
+
+            <!-- <div class="form-group row mb-3">
                 <label for="total_biaya" class="col-sm-2 col-form-label">Total Biaya:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="total_biaya" name="total_biaya" required>
                 </div>
-            </div>
-
-            <div class="form-group row mb-3">
-                <label for="detail_biaya" class="col-sm-2 col-form-label">Detail Biaya:</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="detail_biaya" name="detail_biaya" rows="5"></textarea>
-                </div>
-            </div>
+            </div> -->
 
             <div class="form-group row mb-3">
                 <label for="penanggung_jawab" class="col-sm-2 col-form-label">Penanggung Jawab:</label>
@@ -102,13 +125,36 @@
                 </div>
             </div>
 
-            <div class="form-group row mb-3">
+            <!-- <div class="form-group row mb-3">
                 <label for="lpj" class="col-sm-2 col-form-label">Upload LPJ</label>
                 <div class="col-sm-10">
                     <input type="file" class="form-control-file" id="lpj" name="lpj">
                 </div>
-            </div>
+            </div> -->
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            // Fetch bidang options on page load
+            $.ajax({
+                url: "<?php echo base_url('bidang/getAllBidang'); ?>",
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data)
+                    $('#bidang').append($('<option>', {
+                        value: '',
+                        text: 'Pilih Bidang'
+                    }));
+                    $.each(data, function(key, value) {
+                        $('#bidang').append($('<option>', {
+                            value: value.id_bidang,
+                            text: value.nama_bidang
+                        }));
+                    });
+                }
+            });
+        })
+    </script>

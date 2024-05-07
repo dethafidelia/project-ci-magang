@@ -1,6 +1,6 @@
 <div class="container">
     <div class="d-flex justify-content-end mb-2">
-        <a href="<?= base_url('tambah') ?>" class="btn btn-primary">Tambah Anggota</a>
+        <a href="<?= base_url('register') ?>" class="btn btn-primary">Tambah Anggota</a>
     </div>
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
@@ -10,7 +10,8 @@
                     <th>Nama Lengkap</th>
                     <th>Bidang</th>
                     <th>Tim Pelayanan</th>
-                    <th>Proposal</th>
+                    <th>Username</th>
+                    <th>Password</th>
                     <th>Edit</th>
                 </tr>
             </thead>
@@ -26,7 +27,7 @@
 <script>
     $(document).ready(function() {
         $.ajax({
-            url: "<?php echo base_url('register/getAllUser'); ?>",
+            url: "<?php echo base_url('dpph/getAllUser'); ?>",
             method: "GET",
             dataType: "JSON",
             async: false,
@@ -39,7 +40,8 @@
                     html += '<td>' + data[i]['NAMA_LENGKAP'] + '</td>';
                     html += '<td>' + data[i]['NAMA_BIDANG'] + '</td>';
                     html += '<td>' + data[i]['NAMA_TIMPEL'] + '</td>';
-                    html += '<td>' + data[i]['PROPOSAL'] + '</td>';
+                    html += '<td>' + data[i]['USERNAME'] + '</td>';
+                    html += '<td>' + data[i]['PASSWORD'] + '</td>';
                     html += '<td>';
                     html += '<a href="<?= base_url('edit') ?>' + data[i]['EDIT'] + '" class="btn btn-primary">Edit</a>';
                     html += '<a href="<?= base_url('delete') ?>' + data[i]['EDIT'] + '" class="btn btn-danger">Hapus</a>';

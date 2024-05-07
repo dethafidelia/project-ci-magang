@@ -10,26 +10,16 @@ class AgendaModel extends Model
     protected $primaryKey = 'ID';
     protected $allowedFields = [
         'BIDANG', 'SASARAN_STRATEGIS', 'INDIKATOR', 'TARGET',
-        'ASUMSI', 'RESIKO', 'KEGIATAN_UTAMA', 'WAKTU', 'TOTAL_BIAYA',
-        'DETAIL_BIAYA', 'PENANGGUNG_JAWAB', 'KETERANGAN', 'LPJ'
+        'ASUMSI', 'RESIKO', 'KEGIATAN_UTAMA', 'WAKTU', 'SWADAYA',
+        'DEWAN_PAROKI', 'SUBSIDI_KAS', 'SUMBER_LAIN', 'TOTAL_BIAYA',
+        'PENANGGUNG_JAWAB', 'KETERANGAN'
     ];
 
     public function tambah($data)
     {
-        $this->save([
-            'BIDANG' => $data['BIDANG'],
-            'SASARAN_STRATEGIS' => $data['SASARAN_STRATEGIS'],
-            'INDIKATOR' => $data['INDIKATOR'],
-            'TARGET' => $data['TARGET'],
-            'ASUMSI' => $data['ASUMSI'],
-            'RESIKO' => $data['RESIKO'],
-            'KEGIATAN_UTAMA' => $data['KEGIATAN_UTAMA'],
-            'WAKTU' => $data['WAKTU'],
-            'TOTAL_BIAYA' => $data['TOTAL_BIAYA'],
-            'DETAIL_BIAYA' => $data['DETAIL_BIAYA'],
-            'PENANGGUNG_JAWAB' => $data['PENANGGUNG_JAWAB'],
-            'KETERANGAN' => $data['KETERANGAN'],
-            'LPJ' => $data['LPJ']
-        ]);
+        // Calculate total biaya before saving
+        $data['TOTAL_BIAYA'] = $data['SWADAYA'] + $data['DEWAN_PAROKI'] + $data['SUBSIDI_KAS'] + $data['SUMBER_LAIN'];
+
+        $this->save($data);
     }
 }

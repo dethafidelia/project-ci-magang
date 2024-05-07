@@ -30,7 +30,7 @@ class MonevModel extends Model
             'SUBSIDI_KAS' => $data['SUBSIDI_KAS'],
             'SUMBER_LAIN' => $data['SUMBER_LAIN'],
             'TOTAL_BIAYA' => $data['TOTAL_BIAYA'],
-            'PENANGGUNG_JAWAB' => $data['PENANGGUNG_JAWAB'],
+            'PJ' => $data['PJ'],
             'KETERANGAN' => $data['KETERANGAN'],
             'CATATAN' => $data['CATATAN']
         ]);

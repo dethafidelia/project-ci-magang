@@ -8,7 +8,18 @@ class UserModel extends Model
 {
     protected $table = 'login';
     protected $primaryKey = 'USERNAME';
-    protected $allowedFields = ['USERNAME', 'PASSWORD'];
+    protected $allowedFields = ['NAMA_LENGKAP', 'NAMA_BIDANG', 'NAMA_TIMPEL', 'USERNAME', 'PASSWORD'];
+
+    public function tambah($data)
+    {
+        $this->save([
+            'NAMA_LENGKAP' => $data['NAMA_LENGKAP'],
+            'NAMA_BIDANG' => $data['NAMA_BIDANG'],
+            'NAMA_TIMPEL' => $data['NAMA_TIMPEL'],
+            'USERNAME' => $data['USERNAME'],
+            'PASSWORD' => $data['PASSWORD']
+        ]);
+    }
 
     public function getUser($USERNAME)
     {
