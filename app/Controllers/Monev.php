@@ -2,8 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Models\MonevModel;
-use App\Models\MonevModel2;
+use App\Models\RencanaModel;
+use App\Models\RealisasiModel;
+
 
 class Monev extends BaseController
 {
@@ -11,7 +12,8 @@ class Monev extends BaseController
     {
         return view('gereja/header')
             . view('gereja/dropdown')
-            . view('gereja/MONEV');
+            . view('gereja/MONEVRencana')
+            . view('gereja/MONEVRealisasi');
     }
 
     // public function getAllMonev()
@@ -21,29 +23,17 @@ class Monev extends BaseController
     //     echo json_encode($data);
     // }
 
-    public function getAllMonev()
+    public function getAllRencana()
     {
-        $model = new MonevModel();
+        $model = new RencanaModel();
         $data = $model->findAll();
         echo json_encode($data);
+    }
 
-        // $model2 = new MonevModel2();
-        // $data2 = $model2->findAll();
-        // echo json_encode($data2);
-
-        // $tabel1Model = new MonevModel();
-        // $tabel2Model = new MonevModel2();
-
-        // $tabel1Data = $tabel1Model->getTabel1Data();
-        // $tabel2Data = $tabel2Model->getTabel2Data();
-
-        // echo json_encode($tabel1Data);
-        // echo json_encode($tabel2Data);
-
-
-        // $this->load->view('halaman', [
-        //     'tabel1Data' => $tabel1Data,
-        //     'tabel2Data' => $tabel2Data
-        // ]);
+    public function getAllRealisasi()
+    {
+        $model = new RealisasiModel();
+        $data = $model->findAll();
+        echo json_encode($data);
     }
 }

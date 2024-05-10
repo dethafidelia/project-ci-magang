@@ -27,7 +27,7 @@ class DPPH extends BaseController
             'NAMA_BIDANG' => $this->request->getPost('bidang'),
             'NAMA_TIMPEL' => $this->request->getPost('timpel'),
             'USERNAME' => $this->request->getPost('username'),
-            'PASSWORD' => $this->request->getPost('password'),
+            'PASSWORD' => $this->request->getPost('password')
         ];
 
         // Buat instansi model
@@ -36,46 +36,47 @@ class DPPH extends BaseController
         // Panggil metode tambah dari model untuk menyimpan data ke database
         $model->tambah($data);
 
-        // Redirect kembali ke halaman agenda setelah data tersimpan
+        // Redirect kembali ke halaman dpph setelah data tersimpan
         return redirect()->to(base_url('dpph'));
     }
 
-    // public function edit($id)
-    // {
-    //     $anggotaModel = new AnggotaModel();
-    //     $data['record'] = $anggotaModel->find($id); // Mendapatkan data anggota berdasarkan ID
+    public function edit($id)
+    {
+        $anggotaModel = new UserModel();
+        $data['record'] = $anggotaModel->find($id); // Mendapatkan data anggota berdasarkan ID
 
-    //     // Logika untuk menampilkan form edit atau melakukan perubahan data
+        // Logika untuk menampilkan form edit atau melakukan perubahan data
 
-    //     // Misalnya, tampilkan view form edit dengan data anggota yang akan diubah
-    //     return view('formDPPH', $data);
-    // }
+        // Misalnya, tampilkan view form edit dengan data anggota yang akan diubah
+        return view('formDPPH', $data);
+    }
 
-    // public function update($id)
-    // {
-    //     // Logika untuk memperbarui data anggota di database
+    public function update($id)
+    {
+        // Logika untuk memperbarui data anggota di database
 
-    //     // Misalnya, ambil data yang dikirimkan dari form edit dan lakukan perubahan data
-    //     $newData = [
-    //         'nama' => $this->request->getPost('nama'),
-    //         'bidang' => $this->request->getPost('bidang'),
-    //         'tim_pelayanan' => $this->request->getPost('tim_pelayanan'),
-    //         'proposal' => $this->request->getPost('proposal')
-    //     ];
+        // Misalnya, ambil data yang dikirimkan dari form edit dan lakukan perubahan data
+        $newData = [
+            'NAMA_LENGKAP' => $this->request->getPost('nama_lengkap'),
+            'NAMA_BIDANG' => $this->request->getPost('bidang'),
+            'NAMA_TIMPEL' => $this->request->getPost('timpel'),
+            'USERNAME' => $this->request->getPost('username'),
+            'PASSWORD' => $this->request->getPost('password')
+        ];
 
-    //     $anggotaModel = new AnggotaModel();
-    //     $anggotaModel->update($id, $newData);
+        $anggotaModel = new UserModel();
+        $anggotaModel->update($id, $newData);
 
-    //     // Redirect ke halaman index setelah berhasil memperbarui data
-    //     return redirect()->to(base_url('dpph'));
-    // }
+        // Redirect ke halaman index setelah berhasil memperbarui data
+        return redirect()->to(base_url('dpph'));
+    }
 
-    // public function delete($id)
-    // {
-    //     $anggotaModel = new AnggotaModel();
-    //     $anggotaModel->delete($id); // Hapus data anggota berdasarkan ID
+    public function delete($id)
+    {
+        $anggotaModel = new UserModel();
+        $anggotaModel->delete($id); // Hapus data anggota berdasarkan ID
 
-    //     // Redirect ke halaman index setelah berhasil menghapus data
-    //     return redirect()->to(base_url('dpph'));
-    // }
+        // Redirect ke halaman index setelah berhasil menghapus data
+        return redirect()->to(base_url('dpph'));
+    }
 }

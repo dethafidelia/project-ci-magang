@@ -8,6 +8,7 @@
             <thead class="thead-dark">
                 <tr style="text-align:center;">
                     <th>NO</th>
+                    <th>BIDANG</th>
                     <th>SASARAN STRATEGIS</th>
                     <th>INDIKATOR</th>
                     <th>TARGET</th>
@@ -22,38 +23,9 @@
                     <th>TOTAL BIAYA</th>
                     <th>PENANGGUNG JAWAB</th>
                     <th>KETERANGAN</th>
-                    <th>CATATAN</th>
                 </tr>
             </thead>
             <tbody id="tbody">
-
-            </tbody>
-        </table>
-    </div>
-    <h3>REALISASI</h3>
-    <div class="table-responsive">
-        <table class="table table-striped table-bordered">
-            <thead class="thead-dark">
-                <tr style="text-align:center;">
-                    <th>NO</th>
-                    <th>SASARAN STRATEGIS</th>
-                    <th>INDIKATOR</th>
-                    <th>TARGET</th>
-                    <th>ASUMSI</th>
-                    <th>RESIKO</th>
-                    <th>KETERLAKSANAAN KEGIATAN UTAMA</th>
-                    <th>KETERLAKSANAAN WAKTU</th>
-                    <th>SWADAYA</th>
-                    <th>DEWAN PAROKI</th>
-                    <th>SUBSIDI KAS</th>
-                    <th>SUMBER LAIN</th>
-                    <th>TOTAL BIAYA</th>
-                    <th>PENANGGUNG JAWAB</th>
-                    <th>KETERANGAN</th>
-                    <th>CATATAN</th>
-                </tr>
-            </thead>
-            <tbody id="tbody2">
 
             </tbody>
         </table>
@@ -65,7 +37,7 @@
 <script>
     $(document).ready(function() {
         $.ajax({
-            url: "<?php echo base_url('monev/getAllMonev'); ?>",
+            url: "<?php echo base_url('rencana/getAllRencana'); ?>",
             method: "GET",
             dataType: "JSON",
             async: false,
@@ -75,6 +47,7 @@
                 for (var i = 0; i < data.length; i++) {
                     html += '<tr>';
                     html += '<td>' + order++ + '</td>';
+                    html += '<td>' + data[i]['BIDANG'] + '</td>';
                     html += '<td>' + data[i]['SASARAN_STRATEGIS'] + '</td>';
                     html += '<td>' + data[i]['INDIKATOR'] + '</td>';
                     html += '<td>' + data[i]['TARGET'] + '</td>';
@@ -82,7 +55,6 @@
                     html += '<td>' + data[i]['RESIKO'] + '</td>';
                     html += '<td>' + data[i]['KEGIATAN_UTAMA'] + '</td>';
                     html += '<td>' + data[i]['WAKTU'] + '</td>';
-                    html += '<td>' + data[i]['SWADAYA'] + '</td>';
                     html += '<td>' + formatRupiah(data[i]['SWADAYA']) + '</td>';
                     html += '<td>' + formatRupiah(data[i]['DEWAN_PAROKI']) + '</td>';
                     html += '<td>' + formatRupiah(data[i]['SUBSIDI_KAS']) + '</td>';
@@ -90,7 +62,6 @@
                     html += '<td>' + formatRupiah(data[i]['TOTAL_BIAYA']) + '</td>';
                     html += '<td>' + data[i]['PJ'] + '</td>';
                     html += '<td>' + data[i]['KETERANGAN'] + '</td>';
-                    html += '<td>' + data[i]['CATATAN'] + '</td>';
                     html += '</tr>';
                 }
                 $("tbody").html(html);

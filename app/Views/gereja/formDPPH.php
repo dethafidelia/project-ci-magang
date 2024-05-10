@@ -22,7 +22,6 @@
                 </div>
             </div>
 
-
             <div class="form-group row mb-3">
                 <label for="bidang" class="col-sm-2 col-form-label font-weight-bold">Bidang</label>
                 <div class="col-sm-10">

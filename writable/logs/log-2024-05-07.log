@@ -326,3 +326,15 @@ in APPPATH\Controllers\Agenda.php on line 33.
 INFO - 2024-05-07 06:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-07 06:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-07 07:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-07 08:05:23 --> Call to undefined method App\Models\UserModel::tambah
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\DPPH.php(37): CodeIgniter\Model->__call('tambah', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DPPH->submit()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DPPH))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\detha\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-07 08:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

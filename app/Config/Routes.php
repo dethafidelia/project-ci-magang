@@ -59,9 +59,11 @@ $routes->post('agenda/submit', 'Agenda::submit'); // Rute untuk menangani pengir
 use App\Controllers\Monev;
 
 $routes->get('monev', 'Monev::index');
-$routes->get('monev/getAllMonev', 'Monev::getAllMonev');
+$routes->get('rencana/getAllRencana', 'Monev::getAllRencana');
+$routes->get('realisasi/getAllRealisasi', 'Monev::getAllRealisasi');
 
 $routes->get('laporan', 'Laporan::index');
+$routes->get('laporan/getAllLaporan', 'Laporan::getAllLaporan');
 
 use App\Controllers\HomeAdmin;
 
