@@ -58,7 +58,7 @@
                     html += '<td>' + formatRupiah(data[i]['SUBSIDI_KAS']) + '</td>';
                     html += '<td>' + formatRupiah(data[i]['SUMBER_LAIN']) + '</td>';
                     html += '<td>' + formatRupiah(data[i]['TOTAL_BIAYA']) + '</td>';
-                    html += '<td>' + data[i]['PJ'] + '</td>';
+                    html += '<td>' + data[i]['PENANGGUNG_JAWAB'] + '</td>';
                     html += '<td>' + data[i]['KETERANGAN'] + '</td>';
                     html += '</tr>';
                 }
