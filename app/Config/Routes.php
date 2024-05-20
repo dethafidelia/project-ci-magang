@@ -61,6 +61,7 @@ use App\Controllers\Monev;
 $routes->get('monev', 'Monev::index');
 $routes->get('rencana/getAllRencana', 'Monev::getAllRencana');
 $routes->get('realisasi/getAllRealisasi', 'Monev::getAllRealisasi');
+$routes->get('realisasi/edit/(:segment)', 'Realisasi::editRealisasi/$1');
 
 $routes->get('laporan', 'Laporan::index');
 $routes->get('laporan/getAllLaporan', 'Laporan::getAllLaporan');
@@ -114,6 +115,8 @@ $routes->get('timpel/getById', 'TimpelController::getTimpelById');
 use App\Controllers\Programasi;
 
 $routes->get('programasi', 'Programasi::index');
+
+$routes->get('agenda/cari', 'Programasi::cari');
 
 
 

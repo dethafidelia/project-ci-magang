@@ -1,5 +1,5 @@
 <div class="container">
-    <form>
+    <form action="<?= base_url('agenda/cari') ?>" method="GET">
         <div class="row">
             <div class="col-md-4 form-group">
                 <label for="tahun_anggaran">Tahun Anggaran</label>

@@ -21,6 +21,24 @@ class Agenda extends BaseController
         echo json_encode($data);
     }
 
+    public function cariAgenda()
+    {
+        $model = new AgendaModel();
+        $tahun_anggaran = $this->request->getGet('tahun_anggaran');
+        $bidang = $this->request->getGet('bidang');
+        $timpel = $this->request->getGet('timpel');
+
+        # Buat validasi data dulu
+
+        $data = $model
+            ->where('te', $tahun_anggaran)  # Tentukan gimana dia cari berdasarkan tahunnya,
+            ->where('bidang', $bidang)  # Berdasarkan bidangnya
+            ->where('timpel', $timpel);  # Berdasarkan timpelnya
+
+        # Kembalikan kayak index, tapi data yang ditampilkan hanya yg dari $data
+
+    }
+
     // Metode untuk menangani pengiriman formulir
     public function submit()
     {

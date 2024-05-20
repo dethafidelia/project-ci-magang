@@ -36,4 +36,5 @@ class Monev extends BaseController
         $data = $model->findAll();
         echo json_encode($data);
     }
+
 }

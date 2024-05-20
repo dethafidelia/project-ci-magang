@@ -21,7 +21,7 @@ class Gereja extends BaseController
             ];
             return view('gereja/HOME', $data);
         } else {
-            return view('/Gereja/login');
+            return view('gereja/login');
         }
     }
 
@@ -86,7 +86,7 @@ class Gereja extends BaseController
 
     public function login()
     {
-        return view('Gereja/login');
+        return view('gereja/login');
     }
 
     public function logout()

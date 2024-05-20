@@ -25,14 +25,12 @@
                     <th>EDIT</th>
                 </tr>
             </thead>
-            <tbody id="tabel">
+            <tbody id="tabel_realisasi">
 
             </tbody>
         </table>
     </div>
 </div>
-
-</body>
 
 <script>
     $(document).ready(function() {
@@ -40,11 +38,11 @@
             url: "<?php echo base_url('realisasi/getAllRealisasi'); ?>",
             method: "GET",
             dataType: "JSON",
-            async: false,
+            async: true,
             success: function(data) {
-                var order = 1;
-                var html;
-                for (var i = 0; i < data.length; i++) {
+                let order = 1;
+                let html = '';
+                for (let i = 0; i < data.length; i++) {
                     html += '<tr>';
                     html += '<td>' + order++ + '</td>';
                     html += '<td>' + data[i]['BIDANG'] + '</td>';
@@ -64,12 +62,12 @@
                     html += '<td>' + data[i]['KETERANGAN'] + '</td>';
                     html += '<td>' + data[i]['LPJ'] + '</td>';
                     html += '<td>' + data[i]['CATATAN'] + '</td>';
-                    html += '<td>';
-                    html += '<a href="<?= base_url('edit') ?>' + data[i]['UBAH'] + '" class="btn btn-primary">Edit</a>';
-                    html += '</td>';
+                    let path =  <?= base_url('edit')?>;
+                    html += '<td> <a href="' + path + data[i]['NO'] + '" class="btn btn-primary">Edit</a> </td>';
                     html += '</tr>';
                 }
-                $("tabel").html(html);
+
+                ("#tabel_realisasi .tbody").append(html);
             }
         })
 

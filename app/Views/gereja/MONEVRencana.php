@@ -32,15 +32,13 @@
     </div>
 </div>
 
-</body>
-
 <script>
     $(document).ready(function() {
         $.ajax({
             url: "<?php echo base_url('rencana/getAllRencana'); ?>",
             method: "GET",
             dataType: "JSON",
-            async: false,
+            async: true,
             success: function(data) {
                 var order = 1;
                 var html;
@@ -84,5 +82,3 @@
         }
     })
 </script>
-
-</html>
