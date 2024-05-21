@@ -1,3 +1,8 @@
+<style>
+    body {
+        overflow: hidden;
+    }
+</style>
 <div id="demo" class="carousel slide" data-bs-ride="carousel" style="overflow: hidden;">
 
     <!-- Indicators/dots -->

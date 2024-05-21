@@ -43,8 +43,8 @@
                     html += '<td>' + data[i]['USERNAME'] + '</td>';
                     html += '<td>' + data[i]['PASSWORD'] + '</td>';
                     html += '<td>';
-                    html += '<a href="<?= base_url('edit') ?>' + data[i]['EDIT'] + '" class="btn btn-primary">Edit</a>';
-                    html += '<a href="<?= base_url('delete') ?>' + data[i]['EDIT'] + '" class="btn btn-danger">Hapus</a>';
+                    html += '<a href="<?= base_url('dpph/edit') ?>' + data[i]['USERNAME'] + '" class="btn btn-primary">Edit</a>';
+                    html += '<a href="<?= base_url('dpph/delete') ?>' + data[i]['EDIT'] + '" class="btn btn-danger">Hapus</a>';
                     html += '</td>';
                     html += '</tr>';
                 }

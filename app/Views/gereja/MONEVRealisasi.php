@@ -1,5 +1,8 @@
 <div class="container">
-    <h3>REALISASI</h3>
+    <div class="d-flex justify-content-end mb-2">
+        <a href="<?= base_url('monev') ?>" class="btn btn-primary mr-2">Cari</a>
+    </div>
+    <!-- <h3>REALISASI</h3> -->
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">

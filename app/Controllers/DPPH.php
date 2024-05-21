@@ -48,7 +48,7 @@ class DPPH extends BaseController
         // Logika untuk menampilkan form edit atau melakukan perubahan data
 
         // Misalnya, tampilkan view form edit dengan data anggota yang akan diubah
-        return view('formDPPH', $data);
+        return view('gereja/formDPPHedit', $data);
     }
 
     public function update($id)
@@ -68,7 +68,7 @@ class DPPH extends BaseController
         $anggotaModel->update($id, $newData);
 
         // Redirect ke halaman index setelah berhasil memperbarui data
-        return redirect()->to(base_url('dpph'));
+        return redirect()->to(base_url('dpph/update'));
     }
 
     public function delete($id)

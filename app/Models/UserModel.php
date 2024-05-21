@@ -21,9 +21,13 @@ class UserModel extends Model
         ]);
     }
 
-    public function getUser($USERNAME)
+    public function getUser($USERNAME = false)
     {
-        return $this->where(['username' => $USERNAME])->first();
+        if ($USERNAME === false) {
+            return $this->findAll();
+        }
+        return $this->getWhere(['username' => $USERNAME]);
+        // return $this->where(['username' => $USERNAME])->first();
     }
 
     public function saveUser($data)

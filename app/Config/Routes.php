@@ -46,6 +46,15 @@ use App\Controllers\Home;
 
 $routes->get('home', 'Home::index');
 
+
+$routes->get('user', 'User::index');
+$routes->get('user/tambahdata', 'User::tambahdata');
+$routes->get('user/save', 'User::save');
+$routes->get('user/delete', 'User::delete');
+$routes->get('user/edit', 'User::edit');
+$routes->get('user/update', 'User::updateData');
+
+
 use App\Controllers\Agenda;
 
 $routes->get('agenda', 'Agenda::index');
@@ -75,6 +84,11 @@ use App\Controllers\DPPH;
 $routes->get('dpph', 'DPPH::index');
 $routes->get('dpph/getAllUser', 'DPPH::getAllUser');
 $routes->post('dpph/submit', 'DPPH::submit');
+$routes->post('dpph/edit', 'DPPH::edit');
+$routes->post('dpph/update', 'DPPH::update');
+$routes->post('dpph/delete', 'DPPH::delete');
+
+
 
 use App\Controllers\Register;
 

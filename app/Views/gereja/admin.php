@@ -38,6 +38,14 @@
         }
     </style>
 </head>
+<script>
+    $(function() {
+        $('#save').click(function() {
+            $('#myForm').submit()
+            $('#tambahdata').modal('hide')
+        })
+    })
+</script>
 
 <body>
     <header>
