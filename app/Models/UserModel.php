@@ -26,8 +26,7 @@ class UserModel extends Model
         if ($USERNAME === false) {
             return $this->findAll();
         }
-        return $this->getWhere(['username' => $USERNAME]);
-        // return $this->where(['username' => $USERNAME])->first();
+        return $this->where(['username' => $USERNAME])->first();
     }
 
     public function saveUser($data)
