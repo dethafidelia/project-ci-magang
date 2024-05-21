@@ -22,5 +22,4 @@ class RencanaModel extends Model
 
         $this->save($data);
     }
-
 }
