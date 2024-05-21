@@ -35,6 +35,38 @@
 <script>
     $(document).ready(function() {
         $.ajax({
+            url: "<?php echo base_url('rencana/getAllRencana'); ?>",
+            method: "GET",
+            dataType: "JSON",
+            async: true,
+            success: function(data) {
+                var order = 1;
+                var html;
+                for (var i = 0; i < data.length; i++) {
+                    html += '<tr>';
+                    html += '<td>' + order++ + 'test</td>';
+                    html += '<td>' + data[i]['BIDANG'] + '</td>';
+                    html += '<td>' + data[i]['SASARAN_STRATEGIS'] + '</td>';
+                    html += '<td>' + data[i]['INDIKATOR'] + '</td>';
+                    html += '<td>' + data[i]['TARGET'] + '</td>';
+                    html += '<td>' + data[i]['ASUMSI'] + '</td>';
+                    html += '<td>' + data[i]['RESIKO'] + '</td>';
+                    html += '<td>' + data[i]['KEGIATAN_UTAMA'] + '</td>';
+                    html += '<td>' + data[i]['WAKTU'] + '</td>';
+                    html += '<td>' + formatRupiah(data[i]['SWADAYA']) + '</td>';
+                    html += '<td>' + formatRupiah(data[i]['DEWAN_PAROKI']) + '</td>';
+                    html += '<td>' + formatRupiah(data[i]['SUBSIDI_KAS']) + '</td>';
+                    html += '<td>' + formatRupiah(data[i]['SUMBER_LAIN']) + '</td>';
+                    html += '<td>' + formatRupiah(data[i]['TOTAL_BIAYA']) + '</td>';
+                    html += '<td>' + data[i]['PJ'] + '</td>';
+                    html += '<td>' + data[i]['KETERANGAN'] + '</td>';
+                    html += '</tr>';
+                }
+                $("tbody").html(html);
+            }
+        })
+
+        $.ajax({
             url: "<?php echo base_url('realisasi/getAllRealisasi'); ?>",
             method: "GET",
             dataType: "JSON",
@@ -44,7 +76,7 @@
                 let html = '';
                 for (let i = 0; i < data.length; i++) {
                     html += '<tr>';
-                    html += '<td>' + order++ + '</td>';
+                    html += '<td>' + order++ + 'test</td>';
                     html += '<td>' + data[i]['BIDANG'] + '</td>';
                     html += '<td>' + data[i]['SASARAN_STRATEGIS'] + '</td>';
                     html += '<td>' + data[i]['INDIKATOR'] + '</td>';
@@ -62,7 +94,7 @@
                     html += '<td>' + data[i]['KETERANGAN'] + '</td>';
                     html += '<td>' + data[i]['LPJ'] + '</td>';
                     html += '<td>' + data[i]['CATATAN'] + '</td>';
-                    let path =  <?= base_url('edit')?>;
+                    let path = 'test';
                     html += '<td> <a href="' + path + data[i]['NO'] + '" class="btn btn-primary">Edit</a> </td>';
                     html += '</tr>';
                 }
