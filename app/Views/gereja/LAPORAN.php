@@ -8,52 +8,29 @@
                 <tr style="text-align:center;">
                     <th>NO</th>
                     <th>BIDANG</th>
-                    <th>TIM PELAKSANA</th>
+                    <th>TIM PELAYANAN</th>
                     <th>RENCANA</th>
                     <th>REALISASI</th>
-                    <th>BELUM LAPOR</th>
-                    <th>EVALUSASI</th>
+                    <th>BELUM TEREALISASI</th>
+                    <TH>TIDAK TEREALISASI</TH>
                 </tr>
             </thead>
             <tbody id="tbody">
-                <!-- Isi tabel -->
+                <?php foreach($list as $index => $key): ?>
+                    <tr>
+                        <td><?= $index + 1 ?></td>
+                        <td><?= $key['nama_bidang'] ?></td>
+                        <td><?= $key['nama_tim_pelayanan'] ?></td>
+                        <td><?= $key['jumlah_kegiatan'] ?></td>
+                        <td><?= $key['jumlah_realisasi'] ?></td>
+                        <td><?= $key['jumlah_belum_realisasi'] ?></td>
+                        <td><?= $key['jumlah_tidak_realisasi'] ?></td>
+                    </tr>
+                <?php endforeach ?>
             </tbody>
         </table>
     </div>
 </div>
 
 </body>
-
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            url: "<?php echo base_url('laporan/getAllLaporan'); ?>",
-            method: "GET",
-            dataType: "JSON",
-            async: false,
-            success: function(data) {
-
-                var order = 1;
-                var html;
-                console.log(data);
-                for (var i = 0; i < data.length; i++) {
-
-                    html += '<tr>';
-                    html += '<td>' + order++ + '</td>';
-                    html += '<td>' + data[i]['BIDANG'] + '</td>';
-                    html += '<td>' + data[i]['TIMPEL'] + '</td>';
-                    html += '<td>' + data[i]['RENCANA'] + '</td>';
-                    html += '<td>' + data[i]['REALISASI'] + '</td>';
-                    html += '<td>' + data[i]['RENCANA'] + '</td>';
-                    html += '<td>' + data[i]['BELUM_LAPOR'] + '</td>';
-                    html += '<td>' + data[i]['EVALUASI'] + '</td>';
-                    html += '</tr>';
-                }
-                $("tbody").html(html);
-            }
-        })
-
-    })
-</script>
-
 </html>

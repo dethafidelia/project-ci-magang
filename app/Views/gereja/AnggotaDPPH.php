@@ -1,13 +1,16 @@
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css">
+
 <div class="container">
-    <div class="d-flex justify-content-end mb-2">
+    <div class="d-flex justify-content-end mb-2 py-3">
         <a href="<?= base_url('register') ?>" class="btn btn-primary">Tambah Anggota</a>
     </div>
     <div class="table-responsive">
-        <table class="table table-striped table-bordered">
-            <thead class="thead-dark">
-                <tr style="text-align:center;">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
                     <th>No</th>
                     <th>Nama Lengkap</th>
+                    <th>Status</th>
                     <th>Bidang</th>
                     <th>Tim Pelayanan</th>
                     <th>Username</th>
@@ -15,43 +18,31 @@
                     <th>Edit</th>
                 </tr>
             </thead>
-            <tbody id="tbody">
-                <!-- Isi tabel -->
+            <tbody>
+                <?php foreach ($user as $indes => $key) : ?>
+                    <tr>
+                        <td><?= $indes + 1 ?></td>
+                        <td><?= $key['NAMA_LENGKAP'] ?></td>
+                        <td><?= $key['STATUS'] ?></td>
+                        <td><?= $key['nama_bidang'] ?></td>
+                        <td><?= $key['nama_tim_pelayanan'] ?></td>
+                        <td><?= $key['USERNAME'] ?></td>
+                        <td><?= $key['PASSWORD'] ?></td>
+                        <td>
+                            <a href="<?= base_url('dpph/edit/user/' . $key["id"]) ?>" class="btn btn-primary">Edit</a>
+                            <a href="<?= base_url('dpph/delete/user/' . $key["id"]) ?>" class="btn btn-danger">Hapus</a>
+                        </td>
+                    </tr>
+                <?php endforeach ?>
             </tbody>
         </table>
     </div>
 </div>
 
-</body>
 
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            url: "<?php echo base_url('dpph/getAllUser'); ?>",
-            method: "GET",
-            dataType: "JSON",
-            async: false,
-            success: function(data) {
-                var order = 1;
-                var html;
-                for (var i = 0; i < data.length; i++) {
-                    html += '<tr>';
-                    html += '<td>' + order++ + '</td>';
-                    html += '<td>' + data[i]['NAMA_LENGKAP'] + '</td>';
-                    html += '<td>' + data[i]['NAMA_BIDANG'] + '</td>';
-                    html += '<td>' + data[i]['NAMA_TIMPEL'] + '</td>';
-                    html += '<td>' + data[i]['USERNAME'] + '</td>';
-                    html += '<td>' + data[i]['PASSWORD'] + '</td>';
-                    html += '<td>';
-                    html += '<a href="<?= base_url('dpph/edit') ?>' + data[i]['USERNAME'] + '" class="btn btn-primary">Edit</a>';
-                    html += '<a href="<?= base_url('dpph/delete') ?>' + data[i]['EDIT'] + '" class="btn btn-danger">Hapus</a>';
-                    html += '</td>';
-                    html += '</tr>';
-                }
-                $("tbody").html(html);
-            }
-        })
-    })
-</script>
+
+<script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+<script src="<?= base_url('asset/js/index.js') ?>"></script>
+</body>
 
 </html>

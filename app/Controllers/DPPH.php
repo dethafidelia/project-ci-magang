@@ -6,12 +6,6 @@ use App\Models\UserModel;
 
 class DPPH extends BaseController
 {
-    public function index()
-    {
-        return view('gereja/admin')
-            . view('gereja/AnggotaDPPH');
-    }
-
     public function getAllUser()
     {
         $model = new UserModel();
@@ -71,12 +65,98 @@ class DPPH extends BaseController
         return redirect()->to(base_url('dpph/update'));
     }
 
+
+
+
+    public function index()
+    {
+        $model = new UserModel();
+        $data['user'] = $model->getUsersWithDetails();
+        return view('gereja/admin', $data) . view('gereja/AnggotaDPPH');
+    }
+
+    public function prosesAddUser()
+    {
+        $data = [
+            'NAMA_LENGKAP' => $this->request->getPost('nama_lengkap'),
+            'USERNAME' => $this->request->getPost('username'),
+            'PASSWORD' => $this->request->getPost('password'),
+            'STATUS' => $this->request->getPost('status'),
+            'id_bidang' => $this->request->getPost('bidang'),
+            'id_tim_pelayanan' => $this->request->getPost('timpel')
+        ];
+
+        $model = new UserModel();
+        $model->tambah($data);
+        return redirect()->to(base_url('dpph'));
+    }
+
+    public function viewEditUser($id)
+    {
+        $anggotaModel = new UserModel();
+        $data['user'] = $anggotaModel->getDetails($id);
+        return view('gereja/formDPPHedit', $data);
+    }
+
+    public function editProses()
+    {
+        $model = new UserModel();
+        $validation = \Config\Services::validation();
+
+        $id_user = $this->request->getVar('id_user');
+        $user = $model->where('id', $id_user)->first();
+        if (!$user) {
+            return redirect()->to(base_url('dpph'));
+        }
+
+        $newPassword = $this->request->getVar('password_new');
+        $password = $this->request->getVar('password_old');
+        // dd($newPassword, $password);
+
+        if (!empty($newPassword)) {
+            if ($password !== $user['PASSWORD']) {
+                dd('salah passwordd');
+                return redirect()->to(base_url('dpph'));
+            }
+            $validate = [
+                'password_new' => 'required',
+                'password_confirmation' => 'matches[password_new]'
+            ];
+
+            if (!$validation->setRules($validate)->run($this->request->getPost())) {
+                dd($validate);
+                return redirect()->to(base_url('dpph'));
+            }
+        }
+
+        $bidang = $this->request->getPost('bidang');
+        $timpel = $this->request->getPost('timpel');
+
+        $updatePegawai = $model->update(
+            $id_user,
+            [
+                'USERNAME' => $this->request->getPost('username'),
+                'PASSWORD' => !empty($newPassword) ? $newPassword : $user['PASSWORD'],
+                'NAMA_LENGKAP' => $this->request->getPost('nama_lengkap'),
+                'STATUS' => $this->request->getPost('status'),
+                'id_bidang' => $bidang,
+                'id_tim_pelayanan' => $timpel,
+            ]
+        );
+
+        if (!$updatePegawai) {
+            return redirect()->to(base_url('dpph'));
+        }
+        return redirect()->to(base_url('dpph'));
+    }
+
     public function delete($id)
     {
         $anggotaModel = new UserModel();
-        $anggotaModel->delete($id); // Hapus data anggota berdasarkan ID
-
-        // Redirect ke halaman index setelah berhasil menghapus data
+        $hapus = $anggotaModel->delete($id);
+        if (!$hapus) {
+            dd('gagal happus');
+        }
         return redirect()->to(base_url('dpph'));
     }
 }

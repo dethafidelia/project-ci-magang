@@ -74,6 +74,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('dpph') ?>">DATA DPPH</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('Admin/Bidang-Timpel') ?>">DATA BIDANG & TIMPEL</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">

@@ -29,8 +29,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('login', 'Login::index');
+$routes->get('/', 'Gereja::index');
+// $routes->get('login', 'Login::index');
 
 
 
@@ -51,6 +51,8 @@ use App\Controllers\Agenda;
 $routes->get('agenda', 'Agenda::index');
 $routes->get('agenda/getAllAgenda', 'Agenda::getAllAgenda');
 $routes->post('agenda/submit', 'Agenda::submit'); // Rute untuk menangani pengiriman formulir
+
+
 
 
 // $routes->get('proyek-kp/lpj/(:segment)', 'LpjController::showFile/$1');
@@ -120,8 +122,46 @@ $routes->get('timpel/getById', 'TimpelController::getTimpelById');
 use App\Controllers\Programasi;
 
 $routes->get('programasi', 'Programasi::index');
-
 $routes->get('agenda/cari', 'Programasi::cari');
+
+
+
+// Route Baru
+
+$routes->post('login/proses', 'Gereja::check');
+
+
+
+
+$routes->get('dpph/delete/user/(:any)', 'DPPH::delete/$1');
+$routes->post('dpph/add/user', 'DPPH::prosesAddUser');
+$routes->get('dpph/edit/user/(:any)', 'DPPH::viewEditUser/$1');
+$routes->post('dpph/edit/user/proses', 'DPPH::editProses');
+
+$routes->post('agenda/save/proses', 'Agenda::saveAgenda');
+$routes->get('agenda/detail/(:any)', 'Agenda::detailProgramsi/$1');
+
+$routes->get('monev/detail/(:any)', 'Monev::detailMonev/$1');
+$routes->get('monev/edit/(:any)', 'Monev::editMonevRealisasi/$1');
+$routes->post('monev/edit/proses', 'Monev::editMonevRealisasiProses');
+
+$routes->get('Admin/Bidang-Timpel', 'HomeAdmin::bidtim');
+$routes->post('Admin/Bidang/add', 'HomeAdmin::addBidang');
+$routes->post('Admin/Timpel/add', 'HomeAdmin::addTimpel');
+$routes->get('Admin/bidang/delete/(:any)', 'HomeAdmin::deleteBidang/$1');
+$routes->get('Admin/timpel/delete/(:any)', 'HomeAdmin::deleteTimpel/$1');
+
+$routes->get('agenda/cariData', 'Agenda::cariData');
+$routes->get('agenda/cari-data/realisasi', 'Agenda::cariDataRealisasi');
+$routes->get('agenda/cari-data/rencana', 'Agenda::cariDataRencana');
+
+
+
+
+
+
+
+
 
 
 

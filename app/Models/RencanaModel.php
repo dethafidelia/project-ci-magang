@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class RencanaModel extends Model
 {
-    protected $table = 'programasi';
+    protected $table = 'tim_programsi';
     protected $primaryKey = 'ID';
     protected $allowedFields = [
         'BIDANG', 'SASARAN_STRATEGIS', 'INDIKATOR', 'TARGET',

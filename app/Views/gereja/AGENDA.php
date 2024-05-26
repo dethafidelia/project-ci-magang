@@ -1,7 +1,9 @@
-<div class="container">
+<div class="container mt-3">
     <div class="d-flex justify-content-end mb-2">
-        <a href="<?= base_url('agenda') ?>" class="btn btn-primary mr-2">Cari</a>
-        <a href="<?= base_url('programasi') ?>" class="btn btn-primary">Tambah Data</a>
+        <button id="btnCariData" class="btn btn-primary me-2">Cari</button>
+        <?php if (session('status') === 'Ketua') : ?>
+            <a href="<?= base_url('programasi') ?>" class="btn btn-primary">Tambah Data</a>
+        <?php endif ?>
     </div>
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
@@ -9,84 +11,74 @@
                 <tr style="text-align:center;">
                     <th>NO</th>
                     <th>BIDANG</th>
+                    <th>TIM PELAYANAN</th>
                     <th>SASARAN STRATEGIS</th>
                     <th>INDIKATOR</th>
-                    <th>TARGET</th>
-                    <th>ASUMSI</th>
-                    <th>RESIKO</th>
-                    <th>KEGIATAN UTAMA</th>
-                    <th>WAKTU</th>
-                    <th>SWADAYA</th>
-                    <th>DEWAN PAROKI</th>
-                    <th>SUBSIDI KAS</th>
-                    <th>SUMBER LAIN</th>
-                    <th>TOTAL BIAYA</th>
-                    <th>PENANGGUNG JAWAB</th>
-                    <th>KETERANGAN</th>
-                    <!-- <th>LPJ</th> -->
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody id="tbody">
-                <!-- Isi tabel -->
+                <?php foreach ($program as $index => $key) :  ?>
+                    <tr>
+                        <td><?= $index + 1 ?></td>
+                        <td><?= $key['nama_bidang'] ?></td>
+                        <td><?= $key['nama_tim_pelayanan'] ?></td>
+                        <td><?= $key['SASARAN_STRATEGIS'] ?></td>
+                        <td><?= $key['INDIKATOR'] ?></td>
+                        <td>
+                            <a href="<?= base_url('agenda/detail/' . $key["ID"]) ?>" class="btn btn-primary">Detail</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+
             </tbody>
         </table>
     </div>
 </div>
-
-</body>
-
 <script>
     $(document).ready(function() {
-        $.ajax({
-            url: "<?php echo base_url('agenda/getAllAgenda'); ?>",
-            method: "GET",
-            dataType: "JSON",
-            async: false,
-            success: function(data) {
+        $('#btnCariData').click(function() {
+            var tahun_anggaran = $('#tahun_anggaran').val();
+            var bidang = $('#bidang').val();
+            var timpel = $('#timpel').val();
 
-                var order = 1;
-                var html;
-                console.log(data);
-                for (var i = 0; i < data.length; i++) {
+            // Lakukan ajax dan respon ke server
+            $.ajax({
+                url: '<?= base_url('agenda/cariData'); ?>',
+                type: 'GET',
+                data: {
+                    tahun: tahun_anggaran,
+                    id_bidang: bidang,
+                    id_timpel: timpel
+                },
+                success: function(response) {
+                    // Tangani respons dari server
+                    console.log(response);
+                    var data = JSON.parse(response);
 
-                    html += '<tr>';
-                    html += '<td>' + order++ + '</td>';
-                    html += '<td>' + data[i]['BIDANG'] + '</td>';
-                    html += '<td>' + data[i]['SASARAN_STRATEGIS'] + '</td>';
-                    html += '<td>' + data[i]['INDIKATOR'] + '</td>';
-                    html += '<td>' + data[i]['TARGET'] + '</td>';
-                    html += '<td>' + data[i]['ASUMSI'] + '</td>';
-                    html += '<td>' + data[i]['RESIKO'] + '</td>';
-                    html += '<td>' + data[i]['KEGIATAN_UTAMA'] + '</td>';
-                    html += '<td>' + data[i]['WAKTU'] + '</td>';
-                    html += '<td>' + formatRupiah(data[i]['SWADAYA']) + '</td>';
-                    html += '<td>' + formatRupiah(data[i]['DEWAN_PAROKI']) + '</td>';
-                    html += '<td>' + formatRupiah(data[i]['SUBSIDI_KAS']) + '</td>';
-                    html += '<td>' + formatRupiah(data[i]['SUMBER_LAIN']) + '</td>';
-                    html += '<td>' + formatRupiah(data[i]['TOTAL_BIAYA']) + '</td>';
-                    html += '<td>' + data[i]['PENANGGUNG_JAWAB'] + '</td>';
-                    html += '<td>' + data[i]['KETERANGAN'] + '</td>';
-                    // html += '<td>' + data[i]['LPJ'] + '</td>';
-                    html += '</tr>';
+                    // Clear existing rows
+                    $('#tbody').empty();
+
+                    // Loop through the data and add rows to the table
+                    for (var i = 0; i < data.length; i++) {
+                        var row = $('<tr>');
+                        row.append($('<td>').text(i + 1)); // NO
+                        row.append($('<td>').text(data[i].bidang)); // BIDANG
+                        row.append($('<td>').text(data[i].pelayanan)); // BIDANG
+                        row.append($('<td>').text(data[i].SASARAN_STRATEGIS)); // SASARAN STRATEGIS
+                        row.append($('<td>').text(data[i].INDIKATOR)); // INDIKATOR
+                        var aksi = $('<td>');
+                        var link = $('<a>').attr('href', '<?= base_url('agenda/detail/') ?>' + data[i].ID).text('Detail').addClass('btn btn-primary');
+                        aksi.append(link);
+                        aksi.css('text-align', 'center'); // Mengatur tata letak ke tengah menggunakan CSS
+                        row.append(aksi);
+                        $('#tbody').append(row);
+                    }
                 }
-                $("tbody").html(html);
-            }
-        })
-        // Fungsi untuk format mata uang rupiah
-        function formatRupiah(angka) {
-            var number_string = angka.toString();
-            var sisa = number_string.length % 3;
-            var rupiah = number_string.substr(0, sisa);
-            var ribuan = number_string.substr(sisa).match(/\d{3}/g);
+            });
 
-            if (ribuan) {
-                var separator = sisa ? '.' : '';
-                rupiah += separator + ribuan.join('.');
-            }
-
-            return 'Rp ' + rupiah;
-        }
-    })
+        });
+    });
 </script>
-
+</body>
 </html>

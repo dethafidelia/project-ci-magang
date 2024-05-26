@@ -1,0 +1,1333 @@
+INFO - 2024-05-23 04:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 04:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 04:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 04:15:03 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(19): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 04:15:03 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 04:16:28 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(33): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 04:16:28 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(33): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 04:58:27 --> mysqli_sql_exception: Column 'id_bidang' in where clause is ambiguous in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pro...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pro...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pro...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pro...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Models\AgendaModel.php(75): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(26): App\Models\AgendaModel->getLaporan('1', '1')
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->index()
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#13 {main}
+CRITICAL - 2024-05-23 04:58:27 --> Column 'id_bidang' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = :id_bidang:
+AND `id_tim_pelayanan` = :id_tim_pelayanan:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(26): App\Models\AgendaModel->getLaporan('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 04:58:27 --> mysqli_sql_exception: Column 'id_bidang' in where clause is ambiguous in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pro...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pro...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pro...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pro...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Models\AgendaModel.php(75): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(26): App\Models\AgendaModel->getLaporan('1', '1')
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->index()
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#13 {main}
+CRITICAL - 2024-05-23 04:58:27 --> Column 'id_bidang' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = \'1\'
+AND `id_tim_pelayanan` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_programsi`.*, `bidang`.`nama_bidang`, `tim_pelayanan`.`nama_tim_pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_bidang` = :id_bidang:
+AND `id_tim_pelayanan` = :id_tim_pelayanan:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(26): App\Models\AgendaModel->getLaporan('1', '1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:08:34 --> Undefined array key "status"
+in APPPATH\Controllers\Laporan.php on line 34.
+ 1 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Controllers\\Laporan.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:08:35 --> Undefined array key "status"
+in APPPATH\Controllers\Laporan.php on line 34.
+ 1 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Controllers\\Laporan.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:23:34 --> Undefined array key "status"
+in APPPATH\Controllers\Laporan.php on line 35.
+ 1 APPPATH\Controllers\Laporan.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Controllers\\Laporan.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:23:35 --> Undefined array key "status"
+in APPPATH\Controllers\Laporan.php on line 35.
+ 1 APPPATH\Controllers\Laporan.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Controllers\\Laporan.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 05:26:30 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 05:26:30 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:31:30 --> Unsupported operand types: array + int
+in APPPATH\Views\gereja\LAPORAN.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/LAPORAN', [], true)
+ 4 APPPATH\Controllers\Laporan.php(81): view('gereja/LAPORAN')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:31:31 --> Unsupported operand types: array + int
+in APPPATH\Views\gereja\LAPORAN.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/LAPORAN', [], true)
+ 4 APPPATH\Controllers\Laporan.php(81): view('gereja/LAPORAN')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 05:31:31 --> Unsupported operand types: array + int
+in APPPATH\Views\gereja\LAPORAN.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/LAPORAN', [], true)
+ 4 APPPATH\Controllers\Laporan.php(81): view('gereja/LAPORAN')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 05:32:29 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 05:32:29 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 05:33:41 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 05:33:41 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 05:56:31 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 05:56:31 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 05:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 05:57:35 --> mysqli_sql_exception: Table 'gereja_db.laporan' doesn't exist in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#12 {main}
+CRITICAL - 2024-05-23 05:57:35 --> Table 'gereja_db.laporan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `laporan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `laporan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `laporan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `laporan`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Laporan.php(87): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->getAllLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 05:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 05:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 07:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 08:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 11:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 11:46:46 --> mysqli_sql_exception: Unknown column 'user.id_bidang' in 'on clause' in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pel...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pel...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pel...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pel...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+#10 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#13 {main}
+CRITICAL - 2024-05-23 11:46:46 --> Unknown column 'user.id_bidang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 11:46:47 --> mysqli_sql_exception: Unknown column 'user.id_bidang' in 'on clause' in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pel...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pel...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pel...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pel...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+#10 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#13 {main}
+CRITICAL - 2024-05-23 11:46:47 --> Unknown column 'user.id_bidang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+ERROR - 2024-05-23 11:46:58 --> mysqli_sql_exception: Unknown column 'user.id_bidang' in 'on clause' in G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 G:\WORK\PART\DETA\project-ci-magang\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pel...', 0)
+#1 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pel...')
+#2 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pel...')
+#3 G:\WORK\PART\DETA\project-ci-magang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pel...', Array, false)
+#4 G:\WORK\PART\DETA\project-ci-magang\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 G:\WORK\PART\DETA\project-ci-magang\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 G:\WORK\PART\DETA\project-ci-magang\app\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+#7 G:\WORK\PART\DETA\project-ci-magang\app\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+#8 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+#9 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+#10 G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 G:\WORK\PART\DETA\project-ci-magang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 G:\WORK\PART\DETA\project-ci-magang\system\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DE...')
+#13 {main}
+CRITICAL - 2024-05-23 11:46:58 --> Unknown column 'user.id_bidang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tim_pelayanan`.*, `bidang`.`nama_bidang`
+FROM `tim_pelayanan`
+JOIN `bidang` ON `bidang`.`id_bidang` = `user`.`id_bidang`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TimpelModel.php(57): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\HomeAdmin.php(22): App\Models\TimpelModel->getBidangName()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:49:50 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:49:51 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:49:51 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:10 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:11 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:34 --> Undefined variable $bidang
+in APPPATH\Views\gereja\bidTim.php on line 50.
+ 1 APPPATH\Views\gereja\bidTim.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidang', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:35 --> Undefined array key "id"
+in APPPATH\Views\gereja\bidTim.php on line 54.
+ 1 APPPATH\Views\gereja\bidTim.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:35 --> Undefined array key "id"
+in APPPATH\Views\gereja\bidTim.php on line 54.
+ 1 APPPATH\Views\gereja\bidTim.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:36 --> Undefined array key "id"
+in APPPATH\Views\gereja\bidTim.php on line 54.
+ 1 APPPATH\Views\gereja\bidTim.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 11:50:57 --> Undefined array key "id"
+in APPPATH\Views\gereja\bidTim.php on line 54.
+ 1 APPPATH\Views\gereja\bidTim.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Views\\gereja\\bidTim.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/bidtim', [], true)
+ 5 APPPATH\Controllers\HomeAdmin.php(25): view('gereja/bidtim')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->bidtim()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 12:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 12:02:52 --> Too few arguments to function App\Controllers\HomeAdmin::deleteBidang(), 0 passed in G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\HomeAdmin.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->deleteBidang()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+CRITICAL - 2024-05-23 12:02:59 --> Too few arguments to function App\Controllers\HomeAdmin::deleteBidang(), 0 passed in G:\WORK\PART\DETA\project-ci-magang\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\HomeAdmin.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomeAdmin->deleteBidang()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 12:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 12:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 15:11:49 --> mysqli_sql_exception: Unknown table 'gereja.programsi' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `program...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `program...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `program...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `program...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(55): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(95): App\Models\AgendaModel->getDetails()
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->index()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:11:49 --> Unknown table 'gereja.programsi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `programsi`.*, `bidang`.`nama_bidang`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `programsi`.`id_bidang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `programsi`.*, `bidang`.`nama_bidang`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `programsi`.`id_bidang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `programsi`.*, `bidang`.`nama_bidang`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `programsi`.`id_bidang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `programsi`.*, `bidang`.`nama_bidang`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `programsi`.`id_bidang`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(55): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(95): App\Models\AgendaModel->getDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:13:18 --> Undefined array key "id_bidang"
+in APPPATH\Controllers\TimpelController.php on line 21.
+ 1 APPPATH\Controllers\TimpelController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bidang"', 'D:\\belajarCi4\\Gereja\\app\\Controllers\\TimpelController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TimpelController->getTimpelById()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TimpelController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:17:54 --> Undefined array key "nama_tim_pelayanan"
+in APPPATH\Views\gereja\AGENDA.php on line 25.
+ 1 APPPATH\Views\gereja\AGENDA.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_tim_pelayanan"', 'D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\AGENDA.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\AGENDA.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/AGENDA', [], true)
+ 5 APPPATH\Controllers\Agenda.php(98): view('gereja/AGENDA')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:20:15 --> Undefined array key "nama_tim_pelayanan"
+in APPPATH\Views\gereja\detailAgenda.php on line 33.
+ 1 APPPATH\Views\gereja\detailAgenda.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_tim_pelayanan"', 'D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\detailAgenda.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\detailAgenda.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/detailAgenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(132): view('gereja/detailAgenda')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->detailProgramsi('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:20:23 --> Undefined array key "nama_tim_pelayanan"
+in APPPATH\Views\gereja\detailAgenda.php on line 33.
+ 1 APPPATH\Views\gereja\detailAgenda.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_tim_pelayanan"', 'D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\detailAgenda.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\belajarCi4\\Gereja\\app\\Views\\gereja\\detailAgenda.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('gereja/detailAgenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(132): view('gereja/detailAgenda')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->detailProgramsi('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 15:24:41 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:24:41 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+ERROR - 2024-05-23 15:24:44 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:24:44 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+ERROR - 2024-05-23 15:24:49 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:24:49 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2022\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2022')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-23 15:25:27 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2024')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:25:27 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2024')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+ERROR - 2024-05-23 15:25:57 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2024')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:25:57 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('', '', '2024')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+ERROR - 2024-05-23 15:26:15 --> mysqli_sql_exception: Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list' in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('1', '4', '2024')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:26:15 --> Unknown column 'tim_pelayanan.nama_pelayanan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = :id_tim_pelayanan:
+AND `tim_programsi`.`id_bidang` = :tim_programsi.id_bidang:
+AND YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('1', '4', '2024')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+ERROR - 2024-05-23 15:27:26 --> mysqli_sql_exception: Column 'id_tim_pelayanan' in where clause is ambiguous in D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\belajarCi4\Gereja\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `S...', 0)
+#1 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `S...')
+#2 D:\belajarCi4\Gereja\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `S...')
+#3 D:\belajarCi4\Gereja\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `S...', Array, false)
+#4 D:\belajarCi4\Gereja\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajarCi4\Gereja\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\belajarCi4\Gereja\app\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+#7 D:\belajarCi4\Gereja\app\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('1', '4', '2024')
+#8 D:\belajarCi4\Gereja\system\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+#9 D:\belajarCi4\Gereja\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#10 D:\belajarCi4\Gereja\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\belajarCi4\Gereja\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\belajarCi4\Gereja\system\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\G...')
+#13 {main}
+CRITICAL - 2024-05-23 15:27:26 --> Column 'id_tim_pelayanan' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_tim_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_tim_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_tim_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = \'4\'
+AND `tim_programsi`.`id_bidang` = \'1\'
+AND YEAR(WAKTU) = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ID`, `SASARAN_STRATEGIS`, `INDIKATOR`, `bidang`.`nama_bidang` as `bidang`, `tim_pelayanan`.`nama_tim_pelayanan` as `pelayanan`
+FROM `tim_programsi`
+JOIN `bidang` ON `bidang`.`id_bidang` = `tim_programsi`.`id_bidang`
+JOIN `tim_pelayanan` ON `tim_pelayanan`.`id_tim_pelayanan` = `tim_programsi`.`id_tim_pelayanan`
+WHERE `id_tim_pelayanan` = :id_tim_pelayanan:
+AND `tim_programsi`.`id_bidang` = :tim_programsi.id_bidang:
+AND YEAR(WAKTU) = :YEAR(WAKTU):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AgendaModel.php(85): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Agenda.php(142): App\Models\AgendaModel->cariData('1', '4', '2024')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Agenda->cariData()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:31:44 --> Call to undefined method App\Models\AgendaModel::getLaporan
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Laporan.php(22): CodeIgniter\Model->__call('getLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\belajarCi4\\Gereja\\public\\index.php')
+INFO - 2024-05-23 15:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 15:40:44 --> Undefined array key "id_bidang"
+in APPPATH\Controllers\TimpelController.php on line 21.
+ 1 APPPATH\Controllers\TimpelController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_bidang"', 'G:\\WORK\\PART\\DETA\\project-ci-magang\\app\\Controllers\\TimpelController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TimpelController->getTimpelById()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TimpelController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 15:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 15:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-23 16:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-23 16:25:46 --> Call to undefined method App\Models\AgendaModel::getLaporan
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Laporan.php(22): CodeIgniter\Model->__call('getLaporan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('G:\\WORK\\PART\\DETA\\project-ci-magang\\public\\index.php')
+INFO - 2024-05-23 16:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

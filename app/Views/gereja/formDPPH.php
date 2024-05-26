@@ -14,7 +14,7 @@
     <div class="container mt-4">
         <h1 class="fs-5">Formulir Pendaftaran Anggota DPPH</h1>
         <p class="fs-6">Silahkan isi formulir di bawah ini untuk mendaftar.</p>
-        <form action="<?php echo base_url('dpph/submit'); ?>" method="post" class="border p-3">
+        <form action="<?php echo base_url('dpph/add/user'); ?>" method="POST" class="border p-3">
             <div class="form-group row mb-3">
                 <label for="nama_lengkap" class="col-sm-2 col-form-label font-weight-bold">Nama Lengkap</label>
                 <div class="col-sm-10">
@@ -26,7 +26,7 @@
                 <label for="bidang" class="col-sm-2 col-form-label font-weight-bold">Bidang</label>
                 <div class="col-sm-10">
                     <select name="bidang" id="bidang" class="form-control">
-                        <!-- <option value="">Pilih Bidang</option> -->
+                        <option value="">Pilih Bidang</option>
                     </select>
                 </div>
             </div>
@@ -45,6 +45,20 @@
                 <label for="username" class="col-sm-2 col-form-label font-weight-bold">Username</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="username" name="username" required placeholder="Masukkan username Anda">
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="status" class="col-sm-2 col-form-label font-weight-bold">Status</label>
+                <div class="col-sm-10">
+                    <select name="status" id="status" class="form-control">
+                        <option disabled>Pilih Status</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Romo">Romo</option>
+                        <option value="Ketua">Ketua</option>
+                        <option value="Sekretaris">Sekretaris</option>
+                        <option value="Bendahara">Bendahara</option>
+                    </select>
                 </div>
             </div>
 
@@ -69,14 +83,11 @@
     $(document).ready(function() {
         // Fetch bidang options on page load
         $.ajax({
-            url: "<?php echo base_url('bidang/getAllBidang'); ?>",
+            url: "<?= base_url('bidang/getAllBidang'); ?>",
             dataType: 'json',
             success: function(data) {
-                console.log(data)
-                $('#bidang').append($('<option>', {
-                    value: '',
-                    text: 'Pilih Bidang'
-                }));
+                // console.log(data)
+
                 $.each(data, function(key, value) {
                     $('#bidang').append($('<option>', {
                         value: value.id_bidang,
@@ -86,40 +97,39 @@
             }
         });
 
-        // Update Tim Pelayanan dropdown based on selected Bidang
-        $('#bidang').change(async function() {
-            var bidang = $(this).val();
-            console.log(bidang)
-            try {
-                const response = await fetch("<?= base_url('timpel/getById') ?>?bidang=" + bidang, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error('Gagal mengambil data');
-                }
-
-                const contentType = response.headers.get('content-type');
-                if (!contentType || !contentType.includes('application/json')) {
-                    console.log(response)
-                    throw new TypeError('Respons bukan JSON');
-                }
-
-                const res = await response.json();
-                console.log(res);
-                $('#timpel').empty();
-
-                // Tambahkan opsi baru berdasarkan respons dari server
-                res.forEach(function(timpel) {
-                    $('#timpel').append(`<option value="${timpel.id}">${timpel.nama}</option>`);
-                });
-
-            } catch (error) {
-                console.error(error);
+        $('#bidang').on('change', function() {
+            var selectedValue = $(this).val();
+            // if (selectedValue !== "") {
+            // Mengaktifkan elemen <select> dengan id="timpel"
+            if (selectedValue != '') {
+                document.getElementById("timpel").disabled = false;
+            } else {
+                document.getElementById("timpel").disabled = true;
             }
+
+            $.ajax({
+                type: "GET",
+                url: "<?= base_url('timpel/getById'); ?>",
+                data: {
+                    id_bidang: selectedValue
+                },
+                dataType: 'json',
+                success: function(response) {
+                    // Kosongkan opsi tim pelayanan sebelumnya
+                    $('#timpel').empty();
+                    // Tambahkan opsi baru berdasarkan respons dari server
+                    $.each(response, function(key, value) {
+                        $('#timpel').append($('<option>', {
+                            value: value.id_tim_pelayanan,
+                            text: value.nama_tim_pelayanan
+                        }));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Terjadi kesalahan: " + error);
+                }
+            });
+            // }
         });
     });
 </script>

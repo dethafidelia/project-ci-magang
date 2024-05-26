@@ -18,21 +18,9 @@ class TimpelController extends Controller
 
     public function getTimpelById()
     {
-        $data = $_GET['bidang'] ?? null;
-
-        if ($data) {
-            $model = new TimpelModel();
-            $list = $model->getTimpelbyIdBidang($data);
-
-            $result = [];
-            foreach ($list as $key) {
-                $result[] = [
-                    'id_timpel' => $key['id_tim_pelayanan'],
-                    'nama' => $key['nama_tim_pelayanan']
-                ];
-            }
-
-            return $this->respond($result);
-        }
+        $id = $_GET['id_bidang'];
+        $model = new TimpelModel();
+        $data  = $model->getTimpelbyIdBidang($id);
+        return json_encode($data);
     }
 }

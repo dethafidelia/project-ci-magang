@@ -13,16 +13,25 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <a href="<?= base_url('agenda') ?>" class="btn btn-info" role="button" aria-pressed="true" style="float:right">kembali</a>
         <h1>Form Programasi</h1>
 
-        <form action="<?php echo base_url('agenda/submit'); ?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo base_url('agenda/save/proses'); ?>" method="post" enctype="multipart/form-data">
             <div class="form-group row mb-3">
                 <label for="bidang" class="col-sm-2 col-form-label font-weight-bold">Bidang</label>
                 <div class="col-sm-6">
                     <select name="bidang" id="bidang" class="form-control" required>
-                        <!-- <option value="">Pilih Bidang</option> -->
+                        <option value="">Pilih Bidang</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="timpel" class="col-sm-2 col-form-label font-weight-bold">Tim Pelayanan</label>
+                <div class="col-sm-6">
+                    <select name="timpel" id="timpel" class="form-control">
+                        <option value="">Pilih Tim Pelayanan</option>
                     </select>
                 </div>
             </div>
@@ -79,28 +88,28 @@
             <div class="form-group row mb-3">
                 <label for="swadaya" class="col-sm-2 col-form-label">Swadaya:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="swadaya" name="swadaya" required>
+                    <input type="number" class="form-control" id="swadaya" name="swadaya" required>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="dewan_paroki" class="col-sm-2 col-form-label">Dewan Paroki:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="dewan_paroki" name="dewan_paroki" required>
+                    <input type="number" class="form-control" id="dewan_paroki" name="dewan_paroki" required>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="subsidi_kas" class="col-sm-2 col-form-label">Subsidi KAS:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="subsidi_kas" name="subsidi_kas" required>
+                    <input type="number" class="form-control" id="subsidi_kas" name="subsidi_kas" required>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="sumber_lain" class="col-sm-2 col-form-label">Sumber Lain:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="sumber_lain" name="sumber_lain" required>
+                    <input type="number" class="form-control" id="sumber_lain" name="sumber_lain" required>
                 </div>
             </div>
 
@@ -133,14 +142,11 @@
         $(document).ready(function() {
             // Fetch bidang options on page load
             $.ajax({
-                url: "<?php echo base_url('bidang/getAllBidang'); ?>",
+                url: "<?= base_url('bidang/getAllBidang'); ?>",
                 dataType: 'json',
                 success: function(data) {
-                    console.log(data)
-                    $('#bidang').append($('<option>', {
-                        value: '',
-                        text: 'Pilih Bidang'
-                    }));
+                    // console.log(data)
+
                     $.each(data, function(key, value) {
                         $('#bidang').append($('<option>', {
                             value: value.id_bidang,
@@ -149,5 +155,40 @@
                     });
                 }
             });
-        })
+
+            $('#bidang').on('change', function() {
+                var selectedValue = $(this).val();
+                // if (selectedValue !== "") {
+                // Mengaktifkan elemen <select> dengan id="timpel"
+                document.getElementById("timpel").disabled = false;
+
+                $.ajax({
+                    type: "GET",
+                    url: "<?= base_url('timpel/getById'); ?>",
+                    data: {
+                        id_bidang: selectedValue
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        // Kosongkan opsi tim pelayanan sebelumnya
+                        $('#timpel').empty();
+                        $('#timpel').append($('<option>', {
+                            value: '',
+                            text: 'Pilih Tim Pelayanan'
+                        }));
+                        // Tambahkan opsi baru berdasarkan respons dari server
+                        $.each(response, function(key, value) {
+                            $('#timpel').append($('<option>', {
+                                value: value.id_tim_pelayanan,
+                                text: value.nama_tim_pelayanan
+                            }));
+                        });
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Terjadi kesalahan: " + error);
+                    }
+                });
+                // }
+            });
+        });
     </script>

@@ -31,13 +31,12 @@
                 </div>
                 <div class="col-sm-10 text-center">
                     <h1 class="text-white">PAROKI KELUARGA KUDUS BANTENG</h1>
-                    <h1 class="text-white">PALING BARU</h1>
                 </div>
             </div>
         </div>
     </header>
     <div class="bd">
-        <form action="<?= site_url('gereja/check') ?> " method="post">
+        <form action="<?= site_url('login/proses') ?> " method="POST">
             <?= csrf_field() ?>
             <div class="container">
                 <div class="row justify-content-center align-items-center min-vh-100">

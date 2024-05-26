@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use PDO;
 
 class Gereja extends BaseController
 {
@@ -25,62 +26,65 @@ class Gereja extends BaseController
         }
     }
 
-    public function admin()
+    public function admin($user)
     {
-        $post = $this->request->getPost(['usr', 'pwd']);
+        if ($user['STATUS'] === 'Admin') {
+            $params = ['status' => $user['STATUS']];
+            session()->set($params);
 
-        // Cek apakah username dan password admin sesuai
-        if ($post['usr'] === 'admin') {
             return view('gereja/admin')
                 . view('gereja/HOME');
         } else {
             $session = session();
             $session->setFlashdata('error', 'Login gagal. Periksa kembali username dan password Anda.');
-            return redirect()->to('/login');
+            return redirect()->back();
         }
     }
 
-    public function sbr()
+    public function sbr($user)
     {
-        $post = $this->request->getPost(['usr', 'pwd']);
-
-        // Cek apakah username dan password admin sesuai
-        if ($post['usr'] === 'sekretaris') {
-            return view('gereja/SBR')
+        if ($user['STATUS'] === 'Sekretaris' || $user['STATUS'] === 'Romo') {
+            $params = ['status' => $user['STATUS']];
+            session()->set($params);
+            return view('gereja/header')
                 . view('gereja/HOME');
         } else {
             $session = session();
             $session->setFlashdata('error', 'Login gagal. Periksa kembali username dan password Anda.');
-            return redirect()->to('/login');
+            return redirect()->back();
         }
     }
 
 
     public function check()
     {
-        $post = $this->request->getPost(['usr', 'pwd']);
+        $model = new UserModel();
+        $usename = $this->request->getVar('usr');
+        $password = $this->request->getVar('pwd');
 
-        if ($post['usr'] !== 'admin') {
-            if ($post['usr'] !== 'sekretaris' && $post['usr'] !== 'romo') {
-                $query = $this->userModel->getUser($post['usr']);
-                if ($query) {
-                    if ($post['pwd'] == $query['PASSWORD']) {
-                        $_SESSION['usr'] = $post['usr'];
-                        return view('gereja/header')
-                            . view('gereja/HOME');
-                    } else {
-                        $session = session();
-                        $session->setFlashData('error', 'Login gagal. Periksa kembali username dan password Anda.');
-                    }
+        $user = $model->where('USERNAME', $usename)->first();
+        if (!$user) {
+            $session = session();
+            $session->setFlashData('error', 'Login gagal. Periksa kembali username dan password Anda.');
+            return view('Gereja/login');
+        }
+
+        if ($user['STATUS'] !== 'Admin') {
+            if ($user['STATUS'] !== 'Sekretaris' && $user['STATUS'] !== 'Romo') {
+                if ($password == $user['PASSWORD']) {
+                    $params = ['status' => $user['STATUS']];
+                    session()->set($params);
+                    return view('gereja/header')
+                        . view('gereja/HOME');
+                } else {
+                    $session = session();
+                    $session->setFlashData('error', 'Login gagal. Periksa kembali username dan password Anda.');
                 }
-                $session = session();
-                $session->setFlashdata('error', 'Login gagal. Periksa kembali username dan password Anda.');
-                return view('Gereja/login');
             } else {
-                return $this->sbr();
+                return $this->sbr($user);
             }
         } else {
-            return $this->admin();
+            return $this->admin($user);
         }
     }
 
@@ -93,6 +97,7 @@ class Gereja extends BaseController
     {
         $session = session();
         $session->destroy();
+        session()->remove('status');
         return redirect('gereja');
     }
 }
