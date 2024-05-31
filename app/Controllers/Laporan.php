@@ -40,7 +40,7 @@ class Laporan extends BaseController
             }
             $kegiatanCount[$key]++;
 
-            if ($status === 'Realisasi') { 
+            if ($status === 'Realisasi') {
                 if (!isset($realisasiCount[$key])) {
                     $realisasiCount[$key] = 0;
                 }

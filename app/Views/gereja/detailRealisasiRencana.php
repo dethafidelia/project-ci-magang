@@ -78,9 +78,16 @@
         </div>
 
         <div class="form-group row mb-3">
-            <label for="waktu" class="col-sm-2 col-form-label">Waktu:</label>
+            <label for="waktu_mulai" class="col-sm-2 col-form-label">Waktu Mulai:</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="waktu" name="waktu" readonly value="<?= $program['WAKTU'] ?>">
+                <input type="text" class="form-control" id="waktu_mulai" name="waktu_mulai" readonly value="<?= date('d-m-Y', strtotime($program['WAKTU_MULAI'])) ?>">
+            </div>
+        </div>
+
+        <div class="form-group row mb-3">
+            <label for="waktu_akhir" class="col-sm-2 col-form-label">Waktu Berakhir:</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="waktu_akhir" name="waktu_akhir" readonly value="<?= date('d-m-Y', strtotime($program['WAKTU_AKHIR'])) ?>">
             </div>
         </div>
 
@@ -119,8 +126,6 @@
             </div>
         </div>
 
-
-
         <div class="form-group row mb-3">
             <label for="penanggung_jawab" class="col-sm-2 col-form-label">Penanggung Jawab:</label>
             <div class="col-sm-6">
@@ -141,6 +146,15 @@
                 <input type="text" class="form-control" id="status" name="status" readonly value="<?= $program['STATUS'] ?>">
             </div>
         </div>
+
+        <?php if ($program['CATATAN'] !== null) : ?>
+            <div class="form-group row mb-3">
+                <label for="keterangan" class="col-sm-2 col-form-label">Catatan Pemonev:</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="keterangan" name="keterangan" rows="3" readonly><?= htmlspecialchars($program['CATATAN']) ?></textarea>
+                </div>
+            </div>
+        <?php endif ?>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

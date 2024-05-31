@@ -79,9 +79,16 @@
             </div>
 
             <div class="form-group row mb-3">
-                <label for="waktu" class="col-sm-2 col-form-label">Waktu:</label>
+                <label for="waktu_mulai" class="col-sm-2 col-form-label">Waktu Mulai:</label>
                 <div class="col-sm-2">
-                    <input type="date" class="form-control" id="waktu" name="waktu" required>
+                    <input type="date" class="form-control" id="waktu_mulai" name="waktu_mulai" required>
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="waktu_akhir" class="col-sm-2 col-form-label">Waktu Berakhir:</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control" id="waktu_akhir" name="waktu_akhir" required>
                 </div>
             </div>
 
@@ -126,13 +133,6 @@
                     <textarea class="form-control" id="keterangan" name="keterangan" rows="3" required></textarea>
                 </div>
             </div>
-
-            <!-- <div class="form-group row mb-3">
-                <label for="lpj" class="col-sm-2 col-form-label">Upload LPJ</label>
-                <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="lpj" name="lpj">
-                </div>
-            </div> -->
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

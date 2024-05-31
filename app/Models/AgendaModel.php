@@ -14,7 +14,7 @@ class AgendaModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'id_bidang', 'id_tim_pelayanan', 'SASARAN_STRATEGIS', 'INDIKATOR', 'TARGET', 'ASUMSI', 'RESIKO', 'KEGIATAN_UTAMA', 'WAKTU', 'TOTAL_BIAYA', 'SWADAYA', 'DEWAN_PAROKI', 'SUBSIDI_KAS', 'SUMBER_LAIN', 'PENANGGUNG_JAWAB', 'KETERANGAN', 'STATUS'
+        'id_bidang', 'id_tim_pelayanan', 'SASARAN_STRATEGIS', 'INDIKATOR', 'TARGET', 'ASUMSI', 'RESIKO', 'KEGIATAN_UTAMA', 'WAKTU_MULAI', 'WAKTU_AKHIR', 'TOTAL_BIAYA', 'SWADAYA', 'DEWAN_PAROKI', 'SUBSIDI_KAS', 'SUMBER_LAIN', 'PENANGGUNG_JAWAB', 'KETERANGAN', 'CATATAN', 'STATUS'
     ];
 
     // Dates
@@ -79,7 +79,7 @@ class AgendaModel extends Model
             $query->where('tim_programsi.id_bidang', $id_bidang);
         }
         if ($tahun != '') {
-            $query->where('YEAR(WAKTU)', $tahun);
+            $query->where('YEAR(WAKTU_MULAI)', $tahun);
         }
 
         return $query->findAll();
@@ -99,10 +99,34 @@ class AgendaModel extends Model
             $query->where('tim_programsi.id_bidang', $id_bidang);
         }
         if ($tahun != '') {
-            $query->where('YEAR(WAKTU)', $tahun);
+            $query->where('YEAR(WAKTU_MULAI)', $tahun);
         }
 
         return $query->findAll();
+    }
+
+    public function exportExcelProgramasi($id_bidang, $id_timpel, $tahun, $tabel)
+    {
+        $query = $this->select('*, bidang.nama_bidang as bidang, tim_pelayanan.nama_tim_pelayanan as pelayanan')
+            ->join('bidang', 'bidang.id_bidang = tim_programsi.id_bidang')
+            ->join('tim_pelayanan', 'tim_pelayanan.id_tim_pelayanan = tim_programsi.id_tim_pelayanan');
+        if ($tabel == 'realisasi') {
+            $query->where('STATUS !=', 'Belum Terealisasi');
+        } else if ($tabel == 'rencana') {
+            $query->where('STATUS =', 'Belum Terealisasi');
+        }
+
+        if ($id_timpel != '') {
+            $query->where('tim_programsi.id_tim_pelayanan', $id_timpel);
+        }
+        if ($id_bidang != '') {
+            $query->where('tim_programsi.id_bidang', $id_bidang);
+        }
+        if ($tahun != '') {
+            $query->where('YEAR(WAKTU_MULAI)', $tahun);
+        }
+
+        return $query->orderBy('tim_pelayanan.nama_tim_pelayanan', 'ASC')->findAll();
     }
 
     public function cariRencana($id_bidang, $id_timpel, $tahun)
@@ -121,7 +145,7 @@ class AgendaModel extends Model
             $query->where('tim_programsi.id_bidang', $id_bidang);
         }
         if ($tahun != '') {
-            $query->where('YEAR(WAKTU)', $tahun);
+            $query->where('YEAR(WAKTU_MULAI)', $tahun);
         }
 
         return $query->findAll();

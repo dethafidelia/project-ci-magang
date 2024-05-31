@@ -144,6 +144,8 @@ $routes->get('agenda/detail/(:any)', 'Agenda::detailProgramsi/$1');
 $routes->get('monev/detail/(:any)', 'Monev::detailMonev/$1');
 $routes->get('monev/edit/(:any)', 'Monev::editMonevRealisasi/$1');
 $routes->post('monev/edit/proses', 'Monev::editMonevRealisasiProses');
+$routes->get('monev/add/catatan/(:any)', 'Monev::addNotes/$1');
+$routes->post('monev/add/catatan/proses', 'Monev::addNotesProses/$1');
 
 $routes->get('Admin/Bidang-Timpel', 'HomeAdmin::bidtim');
 $routes->post('Admin/Bidang/add', 'HomeAdmin::addBidang');
@@ -153,6 +155,7 @@ $routes->get('Admin/timpel/delete/(:any)', 'HomeAdmin::deleteTimpel/$1');
 
 $routes->get('agenda/cariData', 'Agenda::cariData');
 $routes->get('agenda/cari-data/realisasi', 'Agenda::cariDataRealisasi');
+$routes->get('agenda/exportExcel', 'Agenda::exportExcel');
 $routes->get('agenda/cari-data/rencana', 'Agenda::cariDataRencana');
 
 

@@ -12,6 +12,12 @@ class BidangSeeder extends Seeder
             [
                 'nama_bidang' => 'Bidang 1',
             ],
+            [
+                'nama_bidang' => 'Bidang 2',
+            ],
+            [
+                'nama_bidang' => 'Bidang 3',
+            ],
         ];
 
         $this->db->table('bidang')->insertBatch($data);

@@ -5,6 +5,14 @@
             <a href="<?= base_url('programasi') ?>" class="btn btn-primary">Tambah Data</a>
         <?php endif ?>
     </div>
+    <div class="d-flex justify-content-start mb-3">
+        <button type="button" class="btn btn-success me-2" id="exportExcel">
+            <span><i class="bi bi-file-earmark-excel"></i>&nbsp;</span>Export Excel
+        </button>
+        <button type="button" class="btn btn-danger" id="exportPdf">
+            <i class="bi bi-file-earmark-pdf"></i>&nbsp;Export PDF
+        </button>
+    </div>
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
@@ -12,9 +20,9 @@
                     <th>NO</th>
                     <th>BIDANG</th>
                     <th>TIM PELAYANAN</th>
-                    <th>SASARAN STRATEGIS</th>
-                    <th>INDIKATOR</th>
-                    <th>Aksi</th>
+                    <th>KEGIATAN UTAMA</th>
+                    <th>WAKTU</th>
+                    <th>AKSI</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -23,8 +31,9 @@
                         <td><?= $index + 1 ?></td>
                         <td><?= $key['nama_bidang'] ?></td>
                         <td><?= $key['nama_tim_pelayanan'] ?></td>
-                        <td><?= $key['SASARAN_STRATEGIS'] ?></td>
-                        <td><?= $key['INDIKATOR'] ?></td>
+                        <td><?= $key['KEGIATAN_UTAMA'] ?></td>
+                        <td><?= date('d-m-Y', strtotime($key['WAKTU_MULAI'])) ?> sampai  <?= date('d-m-Y', strtotime($key['WAKTU_AKHIR'])) ?></td>
+
                         <td>
                             <a href="<?= base_url('agenda/detail/' . $key["ID"]) ?>" class="btn btn-primary">Detail</a>
                         </td>
@@ -79,6 +88,31 @@
 
         });
     });
+    $('#exportExcel').on('click', function() {
+        var tahun_anggaran = $('#tahun_anggaran').val();
+        var bidang = $('#bidang').val();
+        var timpel = $('#timpel').val();
+        var url = "<?php echo base_url('agenda/exportExcel'); ?>";
+
+        // Buat URL lengkap dengan parameter GET
+        var fullUrl = url + "?tahun=" + tahun_anggaran + "&id_bidang=" + bidang + "&id_timpel=" + timpel + "&tabel=programasi&tombol=excel";
+
+        // Arahkan browser untuk mengunduh file
+        window.location.href = fullUrl;
+    });
+    $('#exportPdf').on('click', function() {
+        var tahun_anggaran = $('#tahun_anggaran').val();
+        var bidang = $('#bidang').val();
+        var timpel = $('#timpel').val();
+        var url = "<?php echo base_url('agenda/exportExcel'); ?>";
+
+        // Buat URL lengkap dengan parameter GET
+        var fullUrl = url + "?tahun=" + tahun_anggaran + "&id_bidang=" + bidang + "&id_timpel=" + timpel + "&tabel=programasi&tombol=pdf";
+
+        // Arahkan browser untuk mengunduh file
+        window.location.href = fullUrl;
+    });
 </script>
 </body>
+
 </html>

@@ -1,9 +1,13 @@
-
-
-
-
 <div class="container mt-3">
     <h3>TABEL RENCANA</h3>
+    <div class="d-flex justify-content-end mb-3">
+        <button type="button" class="btn btn-success me-2" id="exportExcelRencana">
+            <span><i class="bi bi-file-earmark-excel"></i>&nbsp;</span>Export Excel
+        </button>
+        <button type="button" class="btn btn-danger" id="exportPdfRencana">
+            <i class="bi bi-file-earmark-pdf"></i>&nbsp;Export PDF
+        </button>
+    </div>
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
@@ -80,5 +84,30 @@
             });
 
         });
+    });
+
+    $('#exportExcelRencana').on('click', function() {
+        var tahun_anggaran = $('#tahun_anggaran').val();
+        var bidang = $('#bidang').val();
+        var timpel = $('#timpel').val();
+        var url = "<?php echo base_url('agenda/exportExcel'); ?>";
+
+        // Buat URL lengkap dengan parameter GET
+        var fullUrl = url + "?tahun=" + tahun_anggaran + "&id_bidang=" + bidang + "&id_timpel=" + timpel + "&tabel=rencana&tombol=excel";
+
+        // Arahkan browser untuk mengunduh file
+        window.location.href = fullUrl;
+    });
+    $('#exportPdfRencana').on('click', function() {
+        var tahun_anggaran = $('#tahun_anggaran').val();
+        var bidang = $('#bidang').val();
+        var timpel = $('#timpel').val();
+        var url = "<?php echo base_url('agenda/exportExcel'); ?>";
+
+        // Buat URL lengkap dengan parameter GET
+        var fullUrl = url + "?tahun=" + tahun_anggaran + "&id_bidang=" + bidang + "&id_timpel=" + timpel + "&tabel=rencana&tombol=pdf";
+
+        // Arahkan browser untuk mengunduh file
+        window.location.href = fullUrl;
     });
 </script>

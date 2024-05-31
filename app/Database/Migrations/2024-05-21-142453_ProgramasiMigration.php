@@ -55,9 +55,12 @@ class ProgramasiMigration extends Migration
                 'constraint' => 255,
                 'null' => true
             ],
-            'WAKTU' => [
-                'type' => 'VARCHAR',
-                'constraint' => 255,
+            'WAKTU_MULAI' => [
+                'type' => 'DATE',
+                'null' => true
+            ],
+            'WAKTU_AKHIR' => [
+                'type' => 'DATE',
                 'null' => true
             ],
             'TOTAL_BIAYA' => [
@@ -90,6 +93,11 @@ class ProgramasiMigration extends Migration
                 'null' => true
             ],
             'KETERANGAN' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+                'null' => true
+            ],
+            'CATATAN' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
                 'null' => true

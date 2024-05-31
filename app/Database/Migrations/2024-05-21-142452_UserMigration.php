@@ -30,8 +30,8 @@ class UserMigration extends Migration
             'STATUS' => [
                 'type' => 'ENUM',
                 'null' => true,
-                'constraint' => ['Admin', 'Romo', 'Ketua', 'Sekretaris', 'Bendahara'],
-                //1. Admin 2. Romo 3. Ketua 4. Sekretaris, 5. Bendahara
+                'constraint' => ['Admin', 'Romo', 'Ketua', 'Sekretaris', 'Bendahara', 'Pemonev'],
+                //1. Admin 2. Romo 3. Ketua 4. Sekretaris, 5. Bendahara 6. Pemonev
             ],
             'id_tim_pelayanan' => [
                 'type' => 'INT',

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="d-flex justify-content mb-2">
+    <div class="d-flex justify-content mb-2 mt-3">
         <h2>LAPORAN</h2>
     </div>
     <div class="table-responsive">
@@ -12,7 +12,7 @@
                     <th>RENCANA</th>
                     <th>REALISASI</th>
                     <th>BELUM TEREALISASI</th>
-                    <TH>TIDAK TEREALISASI</TH>
+                    <th>TIDAK TEREALISASI</th>
                 </tr>
             </thead>
             <tbody id="tbody">

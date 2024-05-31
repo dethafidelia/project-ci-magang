@@ -58,6 +58,7 @@
                         <option value="Ketua">Ketua</option>
                         <option value="Sekretaris">Sekretaris</option>
                         <option value="Bendahara">Bendahara</option>
+                        <option value="Pemonev">Pemonev</option>
                     </select>
                 </div>
             </div>

@@ -43,7 +43,7 @@ class Gereja extends BaseController
 
     public function sbr($user)
     {
-        if ($user['STATUS'] === 'Sekretaris' || $user['STATUS'] === 'Romo') {
+        if ($user['STATUS'] === 'Sekretaris' || $user['STATUS'] === 'Romo' || $user['STATUS'] === 'Bendahara' || $user['STATUS'] === 'Pemonev') {
             $params = ['status' => $user['STATUS']];
             session()->set($params);
             return view('gereja/header')
@@ -70,7 +70,7 @@ class Gereja extends BaseController
         }
 
         if ($user['STATUS'] !== 'Admin') {
-            if ($user['STATUS'] !== 'Sekretaris' && $user['STATUS'] !== 'Romo') {
+            if ($user['STATUS'] !== 'Sekretaris' || $user['STATUS'] !== 'Romo' || $user['STATUS'] !== 'Bendahara' || $user['STATUS'] !== 'Pemonev') {
                 if ($password == $user['PASSWORD']) {
                     $params = ['status' => $user['STATUS']];
                     session()->set($params);

@@ -66,77 +66,91 @@
             <div class="form-group row mb-3">
                 <label for="target" class="col-sm-2 col-form-label">Target:</label>
                 <div class="col-sm-6">
-                    <textarea type="text" class="form-control" id="target" name="target" disabled rows="3"><?= htmlspecialchars($program['TARGET']) ?></textarea>
+                    <textarea type="text" class="form-control" id="target" name="target" rows="3"><?= htmlspecialchars($program['TARGET']) ?></textarea>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="asumsi" class="col-sm-2 col-form-label">Asumsi:</label>
                 <div class="col-sm-6">
-                    <textarea type="text" class="form-control" id="asumsi" name="asumsi" rows="3" disabled><?= htmlspecialchars($program['ASUMSI']) ?></textarea>
+                    <textarea type="text" class="form-control" id="asumsi" name="asumsi" rows="3"><?= htmlspecialchars($program['ASUMSI']) ?></textarea>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="resiko" class="col-sm-2 col-form-label">Resiko:</label>
                 <div class="col-sm-6">
-                    <textarea type="text" class="form-control" id="resiko" name="resiko" rows="3" disabled><?= htmlspecialchars($program['RESIKO']) ?></textarea>
+                    <textarea type="text" class="form-control" id="resiko" name="resiko" rows="3"><?= htmlspecialchars($program['RESIKO']) ?></textarea>
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="kegiatan_utama" class="col-sm-2 col-form-label">Kegiatan Utama:</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="kegiatan_utama" name="kegiatan_utama" disabled value="<?= $program['KEGIATAN_UTAMA'] ?>">
+                    <input type="text" class="form-control" id="kegiatan_utama" name="kegiatan_utama" value="<?= $program['KEGIATAN_UTAMA'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
-                <label for="waktu" class="col-sm-2 col-form-label">Waktu:</label>
+                <label for="waktu_mulai" class="col-sm-2 col-form-label">Waktu Mulai:</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="waktu" name="waktu" disabled value="<?= $program['WAKTU'] ?>">
+                    <input type="date" class="form-control" id="waktu_mulai" name="waktu_mulai" value="<?= $program['WAKTU_MULAI'] ?>">
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="waktu_akhir" class="col-sm-2 col-form-label">Waktu Berakhir:</label>
+                <div class="col-sm-2">
+                    <input type="date" class="form-control" id="waktu_akhir" name="waktu_akhir" value="<?= $program['WAKTU_AKHIR'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="swadaya" class="col-sm-2 col-form-label">Swadaya:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control" id="swadaya" name="swadaya" disabled value="<?= $program['SWADAYA'] ?>">
+                    <input type="number" class="form-control" id="swadaya" name="swadaya" value="<?= $program['SWADAYA'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="dewan_paroki" class="col-sm-2 col-form-label">Dewan Paroki:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control" id="dewan_paroki" name="dewan_paroki" disabled value="<?= $program['DEWAN_PAROKI'] ?>">
+                    <input type="number" class="form-control" id="dewan_paroki" name="dewan_paroki" value="<?= $program['DEWAN_PAROKI'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="subsidi_kas" class="col-sm-2 col-form-label">Subsidi KAS:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control" id="subsidi_kas" name="subsidi_kas" disabled value="<?= $program['SUBSIDI_KAS'] ?>">
+                    <input type="number" class="form-control" id="subsidi_kas" name="subsidi_kas" value="<?= $program['SUBSIDI_KAS'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="sumber_lain" class="col-sm-2 col-form-label">Sumber Lain:</label>
                 <div class="col-sm-2">
-                    <input type="number" class="form-control" id="sumber_lain" name="sumber_lain" disabled value="<?= $program['SUMBER_LAIN'] ?>">
+                    <input type="number" class="form-control" id="sumber_lain" name="sumber_lain" value="<?= $program['SUMBER_LAIN'] ?>">
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <label for="total_biaya" class="col-sm-2 col-form-label">TOTAL BIAYA</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="total_biaya" name="total_biaya" disabled value="<?= $program['TOTAL_BIAYA'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="penanggung_jawab" class="col-sm-2 col-form-label">Penanggung Jawab:</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="penanggung_jawab" name="penanggung_jawab" disabled value="<?= $program['PENANGGUNG_JAWAB'] ?>">
+                    <input type="text" class="form-control" id="penanggung_jawab" name="penanggung_jawab" value="<?= $program['PENANGGUNG_JAWAB'] ?>">
                 </div>
             </div>
 
             <div class="form-group row mb-3">
                 <label for="keterangan" class="col-sm-2 col-form-label">Keterangan:</label>
                 <div class="col-sm-6">
-                    <textarea class="form-control" id="keterangan" name="keterangan" rows="3" disabled><?= htmlspecialchars($program['KETERANGAN']) ?></textarea>
+                    <textarea class="form-control" id="keterangan" name="keterangan" rows="3"><?= htmlspecialchars($program['KETERANGAN']) ?></textarea>
                 </div>
             </div>
 
